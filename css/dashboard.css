@@ -314,6 +314,11 @@ p {
   font-weight: 600;
   font-size: 14px;
 }
+.gateway-card{
+  background-color: #f5f5f5;
+  border: 1px solid rgb(246, 241, 223);
+  border-radius: 10px;
+}
 
 .gateway-card-heading {
   font-size: 35px;
