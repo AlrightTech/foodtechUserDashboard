@@ -1,73 +1,70 @@
-.dashboard-heading {
-  font-size: 32px;
-  font-weight: 600;
+
+.dashboard-heading{
+    font-size: 32px;
+    font-weight: 600;
+}
+.dashboard-card{
+    background-color: #f5f5f5;
+    border:  1px solid rgb(251, 243, 210);
+
+    border-radius: 12px;
+}
+.search-icon-position{
+    right: 7%;
+    top: 10%;
+}
+.lable-text{
+    color: #101010;
+}
+.verification-heading{
+    font-size: 23px;
+    font-weight: 600;
+    color: #101010;
+}
+.services-verify-date{
+    border-bottom: 1px solid var(--primary-color) !important;
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+    background-color: #fafafa !important;
+    background-position: right .7rem center;
+    background-repeat: no-repeat;
+    background-size: 16px 12px;
+    border: 1px solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    color: #495057;
+    display: block;
+    font-size: .9375rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 10px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    width: 100%;
 }
 
-.dashboard-card {
-  background-color: #f5f5f5;
-  border: 1px solid rgb(251, 243, 210);
-
-  border-radius: 12px;
+.form{
+    background-color: #f5f5f5;
+    border: 1px solid rgb(246, 241, 223);
+    border-radius: 10px;
 }
+.form-input{    
+    border-radius: 8px !important;
+    padding: 11px !important;
+    border-bottom: 1px solid var(--primary-color) !important;
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+    background-color: #fafafa !important;
+   appearance: none;
+    background-clip: padding-box;
+   color: #495057;
+    display: block;
+    font-size: .9375rem;
+    font-weight: 400;
+    line-height: 1.5;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    width: 100%;
 
-.search-icon-position {
-  right: 7%;
-  top: 10%;
-}
-
-.lable-text {
-  color: #101010;
-}
-
-.verification-heading {
-  font-size: 23px;
-  font-weight: 600;
-}
-
-.services-verify-date {
-  border-bottom: 1px solid var(--primary-color) !important;
-  border-top: none !important;
-  border-right: none !important;
-  border-left: none !important;
-  background-color: #fafafa !important;
-  background-position: right .7rem center;
-  background-repeat: no-repeat;
-  background-size: 16px 12px;
-  border: 1px solid var(--bs-border-color);
-  border-radius: var(--bs-border-radius);
-  color: #495057;
-  display: block;
-  font-size: .9375rem;
-  font-weight: 400;
-  line-height: 1.5;
-  padding: 10px;
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  width: 100%;
-}
-
-.form {
-  background-color: #f5f5f5;
-  border: 1px solid rgb(246, 241, 223);
-  border-radius: 10px;
-}
-
-.form-input {
-  border-radius: 8px !important;
-  padding: 11px !important;
-  border-bottom: 1px solid var(--primary-color) !important;
-  border-top: none !important;
-  border-right: none !important;
-  border-left: none !important;
-  background-color: #fafafa !important;
-  appearance: none;
-  background-clip: padding-box;
-  color: #495057;
-  display: block;
-  font-size: .9375rem;
-  font-weight: 400;
-  line-height: 1.5;
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  width: 100%;
 }
 
 
@@ -289,7 +286,14 @@ p {
   font-size: 22px;
 }
 
-.modal-content {
+.service-detail{
+  font-weight: 600;
+  font-size: 22px;
+  color: #21272A;
+}
+
+.modal-content{
+
   background-color: #f5f5f5;
   border: 1px solid rgb(246, 241, 223);
 }
@@ -303,11 +307,37 @@ p {
   right: 4%;
   bottom: 9%;
 }
+.gateway-sub{
+  font-weight: 600;
+  font-size: 22px;
+  color: #101010;
+}
+.start-heading{
+  font-weight: 600;
+  font-size: 22px;
+  color: rgb(255, 210, 27);
+}
+.gateway-start-content{
+  font-weight: 500;
+  font-size: 14px;
+  color: #4B4B4B
+}
 
 .buy-services {
   background-color: #f5f5f5;
   border-radius: 10px;
   border: 1px solid rgb(246, 241, 223);
+}
+.renewal-license-content{
+  padding-right: 511px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #4B4B4B;
+}
+
+.hr-border{
+  color: rgb(255, 210, 27);
+  margin-inline: 10px;
 }
 
 @media (max-width:576px) {
@@ -315,7 +345,11 @@ p {
     bottom: 5%;
   }
 
-  .table-mobile-screen {
-    width: 600px;
+}
+
+@media (max-width:576px){
+  .select-input{
+    width: 100%;
+
   }
 }

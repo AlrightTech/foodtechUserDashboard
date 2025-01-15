@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="./css/FSSAILicense.css">
 
   <link rel="stylesheet" href="./css/dashboard.css">
+  <link rel="stylesheet" href="./css/setting.css">
 
 
 
@@ -36,7 +37,7 @@
 
   <div class="wrapper">
     <nav id="sidebar" class="sidebar">
-      <a class="sidebar-brand" href="./services.html">
+      <a class="sidebar-brand" href="services.html">
         Logo
       </a>
       <div class="sidebar-content my-3">
@@ -45,7 +46,7 @@
         <ul class="sidebar-nav">
 
           <li class="sidebar-item active mb-3">
-            <a class="sidebar-link" href="./index.html">
+            <a class="sidebar-link" href="/index.html">
               <!-- <i class="align-middle me-2 fas fa-fw fa-home"></i>  -->
 
               <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -59,7 +60,7 @@
 
           </li>
           <li class="sidebar-item  mb-3">
-            <a class="sidebar-link" href="./services.html">
+            <a class="sidebar-link" href="/services.html">
               <!-- <i class="align-middle me-2 fas fa-fw fa-home"></i>  -->
 
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -87,7 +88,7 @@
 
           </li>
           <li class="sidebar-item  mb-3">
-            <a class="sidebar-link" href="./subscription.html">
+            <a class="sidebar-link" href="/subscription.html">
               <!-- <i class="align-middle me-2 fas fa-fw fa-home"></i>  -->
 
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -115,7 +116,7 @@
 
           </li>
           <li class="sidebar-item  mb-3">
-            <a class="sidebar-link" href="./setting.html">
+            <a class="sidebar-link">
               <!-- <i class="align-middle me-2 fas fa-fw fa-home"></i>  -->
 
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -336,7 +337,8 @@
       <main class="content m-0">
         <div class="container-fluid py-2 py-sm-4">
 
-          <h2 class="verification-heading">Service Request</h2>
+          <h2 class="verification-heading">Modification License</h2>
+          <p class="renewal-license-content mb-3">Choose a subscription that aligns with your business goals and start managing your food operations with ease today!</p>
           <div class="form p-2 p-sm-4">
 
             <form action="">
@@ -356,88 +358,19 @@
                     <input type="email" class="form-input" id="send-messege" placeholder="qasim@gmail.com">
                 </div>
                 <div class="mb-3">
-                    <label for="message" class="form-label lable-text">Licence</label>
-                    <select name="" id="" class="form-input">
-                        <option value="select license">Select license</option>
-                        <option value="select license">Select license</option>
-                        <option value="select license">Select license</option>
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label lable-text">Addhaar Card Number</label>
-                    <input type="text" class="form-input" id="send-messege" placeholder="15463256">
-                </div>
-                <div class="row mb-3">
-                    <div class="col-sm-6">
-                        <label for="firstName" class="form-label lable-text">Start Date</label>
-                       <div class="d-flex gap-1 gap-sm-3">
-                        <select class=" services-verify-date rounded-3">
-                            <option value="Date">Date</option>
-                            <option value="Date">01</option>
-                            <option value="Date">02</option>
-                        </select>
-                        <select  class=" services-verify-date rounded-3">
-                            <option value="Month">Month</option>
-                            <option value="March">March</option>
-                            <option value="April">April</option>
-                        </select>
-                        <select  class=" services-verify-date rounded-3 ">
-                            <option value="Year">Year</option>
-                            <option value="2000">2000</option>
-                            <option value="2001">2001</option>
-                        </select>
-                       </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <label for="firstName" class="form-label lable-text">Expiry Date</label>
-                       <div class="d-flex gap-1 gap-sm-3">
-                        <select class=" services-verify-date rounded-3">
-                            <option value="Date">Date</option>
-                            <option value="Date">01</option>
-                            <option value="Date">02</option>
-                        </select>
-                        <select  class=" services-verify-date rounded-3">
-                            <option value="Month">Month</option>
-                            <option value="March">March</option>
-                            <option value="April">April</option>
-                        </select>
-                        <select  class=" services-verify-date rounded-3">
-                            <option value="Year">Year</option>
-                            <option value="2000">2000</option>
-                            <option value="2001">2001</option>
-                        </select>
-                       </div>
+                    <!-- Password Field -->
+                    <label for="passwordInput" class="form-label lable-text">Your Password</label>
+                    <div class="input-group position-relative">
+                      <input type="password" id="passwordInput" class="form-input" placeholder="Enter your password">
+                      <span class="input-group-text position-absolute food-toggle-password" id="togglePassword">
+                        <i class="bi bi-eye-slash"></i>
+                      </span>
                     </div>
                 </div>
-                
-                <div class="">
-                    <label for="message" class="form-label lable-text">Add ID Front Image</label>
-                    <div class="upload__box  position-relative idCard-uploard form-input">
-                        <div class="upload__btn-box">
-                          <label class="upload__btn">
-                            <p><img src="./img/avatars/upload-img-svg.svg" alt="">Upload images</p>
-                            <input type="file" multiple="" data-max_length="20" class="upload__inputfile">
-                          </label>
-                        </div>
-                        <div class="upload__img-wrap"></div>
-                      </div>
-                </div>
-                <div class="mt-3">
-                    <label for="message" class="form-label lable-text">Add ID Back Image</label>
-                    <div class="upload__box  position-relative  form-input ">
-                        <div class="upload__btn-box">
-                          <label class="upload__btn">
-                            <p><img src="./img/avatars/upload-img-svg.svg" alt="">Upload images</p>
-                            <input type="file" multiple="" data-max_length="20" class="upload__inputfile">
-                          </label>
-                        </div>
-                        <div class="upload__img-wrap"></div>
-                      </div>
-                </div>
-
+               
                 <div class="mt-5 d-flex justify-content-end">
-                    <a href="./services-details.html">
-                        <button class="btn py-2" type="button"  > Send Request   <img src="./img/avatars/go-forward-icon.svg" alt="" class="ms-3"></button>
+                    <a href="./license-service-detail.html">
+                        <button class="btn py-2" type="button"  > Continue   <img src="./img/avatars/go-forward-icon.svg" alt="" class="ms-3"></button>
                     </a>
                 </div>
             </form>
