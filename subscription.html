@@ -46,7 +46,7 @@
                 <ul class="sidebar-nav">
 
                     <li class="sidebar-item  mb-3">
-                        <a class="sidebar-link" href="index.html">
+                        <a class="sidebar-link" href="./index.html">
                             <!-- <i class="align-middle me-2 fas fa-fw fa-home"></i>  -->
 
                             <svg width="16" height="18" viewBox="0 0 16 18" fill="none"
@@ -61,7 +61,9 @@
 
                     </li>
                     <li class="sidebar-item   mb-3">
-                        <a class="sidebar-link" href="services.html">
+
+                        <a class="sidebar-link" href="./services.html">
+
                             <!-- <i class="align-middle me-2 fas fa-fw fa-home"></i>  -->
 
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
@@ -90,7 +92,7 @@
 
                     </li>
                     <li class="sidebar-item active mb-3">
-                        <a class="sidebar-link" href="subscription.html">
+                        <a class="sidebar-link" href="./subscription.html">
                             <!-- <i class="align-middle me-2 fas fa-fw fa-home"></i>  -->
 
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
@@ -137,8 +139,10 @@
 
                     </li>
                     <li class="sidebar-item  mb-3">
-                        <a class="sidebar-link" href="Reports.html  ">
-                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+
+                        <a class="sidebar-link" href="./Reports.html">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M13.1083 2.5H6.89167L2.5 6.89167V13.1083L6.89167 17.5H13.1083L17.5 13.1083V6.89167L13.1083 2.5ZM15.8333 12.4167L12.4167 15.8333H7.58333L4.16667 12.4167V7.58333L7.58333 4.16667H12.4167L15.8333 7.58333V12.4167Z"
@@ -158,8 +162,10 @@
 
                     </li>
                     <li class="sidebar-item  mb-3">
-                        <a class="sidebar-link" href="document.html">
-                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+
+                        <a class="sidebar-link">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M13.1083 2.5H6.89167L2.5 6.89167V13.1083L6.89167 17.5H13.1083L17.5 13.1083V6.89167L13.1083 2.5ZM15.8333 12.4167L12.4167 15.8333H7.58333L4.16667 12.4167V7.58333L7.58333 4.16667H12.4167L15.8333 7.58333V12.4167Z"
@@ -359,7 +365,8 @@
 
 
                                     <div class="">
-                                        <p class="food-description">Get started with your food business effortlessly using our Free Food License
+                                        <p class="food-description">Get started with your food business effortlessly
+                                            using our Free Food License
                                             Plan.</p>
                                     </div>
 
@@ -371,7 +378,8 @@
                                     </div>
 
                                     <div class="mt-auto card-signup-btn py-4 ">
-                                        <a href="subGateway.html" class="btn  btn-lg  w-100 start-btn-sub " >Start For Free</a>
+                                        <a href="subGateway.html" class="btn  btn-lg  w-100 start-btn-sub ">Start For
+                                            Free</a>
                                     </div>
 
                                     <div class="  scard-price1">
@@ -425,8 +433,9 @@
                                     </div>
 
 
-                                    <div >
-                                        <p class="food-description">Our Starter Plan is designed for businesses that need more support and
+                                    <div>
+                                        <p class="food-description">Our Starter Plan is designed for businesses that
+                                            need more support and
                                             features to smoothly
                                             navigate.</p>
                                     </div>
@@ -439,7 +448,8 @@
                                     </div>
 
                                     <div class="mt-auto card-signup-btn py-4">
-                                        <a href="subGateway.html" class="btn btn-lg  w-100  start-btn-sub" >Start Today</a>
+                                        <a href="subGateway.html" class="btn btn-lg  w-100  start-btn-sub">Start
+                                            Today</a>
                                     </div>
 
                                     <div class="  scard-price1">
@@ -509,8 +519,9 @@
                                         <h2 class="">Premium</h2>
                                         <p class="p-2">First Month 50% Off</p>
                                     </div>
-                                    <div >
-                                        <p class="food-description">Our Premium Plan offers a comprehensive solution to ensure your food license
+                                    <div>
+                                        <p class="food-description">Our Premium Plan offers a comprehensive solution to
+                                            ensure your food license
                                             application is smooth,
                                             quick, and stress-free.</p>
                                     </div>
@@ -520,7 +531,8 @@
                                     </div>
 
                                     <div class="mt-auto card-signup-btn py-4">
-                                        <a href="subGateway.html" class="btn btn-lg   w-100  start-btn-sub" >Start Today</a>
+                                        <a href="subGateway.html" class="btn btn-lg   w-100  start-btn-sub">Start
+                                            Today</a>
                                     </div>
 
                                     <div class="  scard-price1">
@@ -924,61 +936,63 @@
         }
     </script>
 
-   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-  const cards = document.querySelectorAll(".Pricing-card");
 
-  cards.forEach(card => {
-      const descriptionElement = card.querySelector(".food-description");
-      const fullText = descriptionElement.innerHTML.trim();
-      const charLimit = 100;
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cards = document.querySelectorAll(".Pricing-card");
 
-      // Set initial fixed height of the card
-      card.style.height = "500px";
-      card.style.overflow = "hidden"; // Prevent content overflow
+            cards.forEach(card => {
+                const descriptionElement = card.querySelector(".food-description");
+                const fullText = descriptionElement.innerHTML.trim();
+                const charLimit = 100;
 
-      // If the content is more than 50 characters, show 'Read More' functionality
-      if (fullText.length > charLimit) {
-          const truncatedText = fullText.slice(0, charLimit);
+                // Set initial fixed height of the card
+                card.style.height = "500px";
+                card.style.overflow = "hidden"; // Prevent content overflow
 
-      
-          const readMoreSpan = document.createElement("span");
-          readMoreSpan.classList.add("read-more-btn");
-          readMoreSpan.innerHTML = '<a href="#" class="read-more-link">...</a>';
+                // If the content is more than 50 characters, show 'Read More' functionality
+                if (fullText.length > charLimit) {
+                    const truncatedText = fullText.slice(0, charLimit);
 
-          
-          descriptionElement.innerHTML = truncatedText;
-          descriptionElement.appendChild(readMoreSpan);
+                    // Create "Read More" button
+                    const readMoreSpan = document.createElement("span");
+                    readMoreSpan.classList.add("read-more-btn");
+                    readMoreSpan.innerHTML = '<a href="#" class="read-more-link">Read More</a>';
 
-          
-          const readMoreLink = card.querySelector(".read-more-link");
-          readMoreLink.addEventListener("click", function (e) {
-              e.preventDefault();
-              if (readMoreLink.innerText === "...") {
-                  descriptionElement.innerHTML = fullText + ' <a href="#" class="read-more-link">Read Less</a>';
-                  card.style.height = "auto"; 
-                  attachReadLessListener(card, fullText, truncatedText, readMoreSpan);
-              }
-          });
-      }
-  });
+                    // Update description with truncated text and "Read More"
+                    descriptionElement.innerHTML = truncatedText;
+                    descriptionElement.appendChild(readMoreSpan);
 
+                    // Add event listener for the "Read More" button
+                    const readMoreLink = card.querySelector(".read-more-link");
+                    readMoreLink.addEventListener("click", function (e) {
+                        e.preventDefault();
+                        if (readMoreLink.innerText === "Read More") {
+                            descriptionElement.innerHTML = fullText + ' <a href="#" class="read-more-link">Read Less</a>';
+                            card.style.height = "auto"; // Set card height to auto
+                            attachReadLessListener(card, fullText, truncatedText, readMoreSpan);
+                        }
+                    });
+                }
+            });
 
-  function attachReadLessListener(card, fullText, truncatedText, readMoreSpan) {
-      const readLessLink = card.querySelector(".read-more-link");
-      readLessLink.addEventListener("click", function (e) {
-          e.preventDefault();
-          if (readLessLink.innerText === "Read Less") {
-              const descriptionElement = card.querySelector(".food-description"); 
-              descriptionElement.innerHTML = truncatedText;
-              descriptionElement.appendChild(readMoreSpan); 
-              card.style.height = "500px"; 
-          }
-      });
-  }
-});
+            // Function to attach "Read Less" functionality
+            function attachReadLessListener(card, fullText, truncatedText, readMoreSpan) {
+                const readLessLink = card.querySelector(".read-more-link");
+                readLessLink.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    if (readLessLink.innerText === "Read Less") {
+                        const descriptionElement = card.querySelector(".food-description"); // Use .food-description here
+                        descriptionElement.innerHTML = truncatedText;
+                        descriptionElement.appendChild(readMoreSpan); // Reattach the "Read More" button
+                        card.style.height = "500px"; // Reset card height to 500px
+                    }
+                });
+            }
+        });
 
-   </script>
+    </script>
+
 
 </body>
 
