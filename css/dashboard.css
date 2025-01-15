@@ -13,6 +13,10 @@
   color: rgba(75, 75, 75, 1);
   padding-inline-end: 400px;
 }
+.dashboard-headingdoc{
+  font-size: 32px;
+  font-weight: 600;
+}
 @media (max-width: 1130px) and (min-width: 992px){
   .dashboard-para{
     color: rgba(75, 75, 75, 1);
@@ -35,12 +39,15 @@
   .dashboard-heading{
     font-size: 26px;
     font-weight: 600;
-    text-align: center;
+   
+}
+.dashboard-headingdoc{
+  font-size: 20px;
+  font-weight: 600;
 }
   .dashboard-para{
     color: rgba(75, 75, 75, 1);
     padding-inline-end: 0;
-    text-align: center;
   }
 }
 .dashboard-card{
@@ -417,4 +424,7 @@ p {
   font-size: 14px;
   color: rgba(75, 75, 75, 1) !important;
   font-weight: 600;
+}
+.table-mobile-screen{
+  width: 600px;
 }
