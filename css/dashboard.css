@@ -18,6 +18,7 @@
 .verification-heading{
     font-size: 23px;
     font-weight: 600;
+    color: #101010;
 }
 .services-verify-date{
     border-bottom: 1px solid var(--primary-color) !important;
@@ -269,6 +270,12 @@ border-radius: 10px;
   font-weight: 600;
   font-size: 22px;
 }
+.service-detail{
+  font-weight: 600;
+  font-size: 22px;
+  color: #21272A;
+}
+
 .modal-content{
   background-color: #f5f5f5;
     border: 1px solid rgb(246, 241, 223);
@@ -281,15 +288,47 @@ border-radius: 10px;
   right: 4%;
   bottom: 9%;
 }
+.gateway-sub{
+  font-weight: 600;
+  font-size: 22px;
+  color: #101010;
+}
+.start-heading{
+  font-weight: 600;
+  font-size: 22px;
+  color: rgb(255, 210, 27);
+}
+.gateway-start-content{
+  font-weight: 500;
+  font-size: 14px;
+  color: #4B4B4B
+}
 
 .buy-services{
   background-color: #f5f5f5;
   border-radius: 10px;
   border: 1px solid rgb(246, 241, 223);
 }
+.renewal-license-content{
+  padding-right: 511px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #4B4B4B;
+}
+
+.hr-border{
+  color: rgb(255, 210, 27);
+  margin-inline: 10px;
+}
 
 @media (max-width:576px){
   .btn-position{
     bottom: 5%;
+  }
+}
+
+@media (max-width:576px){
+  .select-input{
+    width: 100%;
   }
 }
