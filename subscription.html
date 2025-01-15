@@ -8,7 +8,7 @@
     <meta name="description" content="Modern, flexible and responsive Bootstrap 5 admin &amp; dashboard template">
     <meta name="author" content="Bootlab">
 
-    <title>Spark - Bootstrap 5 Admin &amp; Dashboard Template</title>
+    <title>FoodTech-User Dashboard</title>
 
     <!-- PICK ONE OF THE STYLES BELOW -->
     <link href="css/modern.css" rel="stylesheet">
@@ -61,7 +61,7 @@
 
                     </li>
                     <li class="sidebar-item   mb-3">
-                        <a class="sidebar-link" href="/services.html">
+                        <a class="sidebar-link" href="services.html">
                             <!-- <i class="align-middle me-2 fas fa-fw fa-home"></i>  -->
 
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
@@ -119,7 +119,7 @@
 
                     </li>
                     <li class="sidebar-item  mb-3">
-                        <a class="sidebar-link">
+                        <a class="sidebar-link" href="setting.html">
                             <!-- <i class="align-middle me-2 fas fa-fw fa-home"></i>  -->
 
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
@@ -137,7 +137,7 @@
 
                     </li>
                     <li class="sidebar-item  mb-3">
-                        <a class="sidebar-link" href="Reports.html">
+                        <a class="sidebar-link" href="Reports.html  ">
                           <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -158,7 +158,7 @@
 
                     </li>
                     <li class="sidebar-item  mb-3">
-                        <a class="sidebar-link">
+                        <a class="sidebar-link" href="document.html">
                           <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -174,7 +174,7 @@
 
 
 
-                            <span class="align-middle">Reports</span>
+                            <span class="align-middle">Documents</span>
                         </a>
 
                     </li>
@@ -941,38 +941,38 @@
       if (fullText.length > charLimit) {
           const truncatedText = fullText.slice(0, charLimit);
 
-          // Create "Read More" button
+      
           const readMoreSpan = document.createElement("span");
           readMoreSpan.classList.add("read-more-btn");
-          readMoreSpan.innerHTML = '<a href="#" class="read-more-link">Read More</a>';
+          readMoreSpan.innerHTML = '<a href="#" class="read-more-link">...</a>';
 
-          // Update description with truncated text and "Read More"
+          
           descriptionElement.innerHTML = truncatedText;
           descriptionElement.appendChild(readMoreSpan);
 
-          // Add event listener for the "Read More" button
+          
           const readMoreLink = card.querySelector(".read-more-link");
           readMoreLink.addEventListener("click", function (e) {
               e.preventDefault();
-              if (readMoreLink.innerText === "Read More") {
+              if (readMoreLink.innerText === "...") {
                   descriptionElement.innerHTML = fullText + ' <a href="#" class="read-more-link">Read Less</a>';
-                  card.style.height = "auto"; // Set card height to auto
+                  card.style.height = "auto"; 
                   attachReadLessListener(card, fullText, truncatedText, readMoreSpan);
               }
           });
       }
   });
 
-  // Function to attach "Read Less" functionality
+
   function attachReadLessListener(card, fullText, truncatedText, readMoreSpan) {
       const readLessLink = card.querySelector(".read-more-link");
       readLessLink.addEventListener("click", function (e) {
           e.preventDefault();
           if (readLessLink.innerText === "Read Less") {
-              const descriptionElement = card.querySelector(".food-description"); // Use .food-description here
+              const descriptionElement = card.querySelector(".food-description"); 
               descriptionElement.innerHTML = truncatedText;
-              descriptionElement.appendChild(readMoreSpan); // Reattach the "Read More" button
-              card.style.height = "500px"; // Reset card height to 500px
+              descriptionElement.appendChild(readMoreSpan); 
+              card.style.height = "500px"; 
           }
       });
   }
