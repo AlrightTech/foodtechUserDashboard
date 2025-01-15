@@ -68,6 +68,8 @@
     font-weight: 600;
     color: #101010;
 }
+
+
 .services-verify-date{
     border-bottom: 1px solid var(--primary-color) !important;
     border-top: none !important;
