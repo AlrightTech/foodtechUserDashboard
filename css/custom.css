@@ -415,7 +415,7 @@ border: 2px solid transparent;
  line-height: 20px;  
  color: rgba(75, 75, 75, 1); 
 }
-.table-contentse td button{
+.user-table-button{
  border-radius: 10px;
  border: 2px solid var(--primary-color);
  color: var(--primary-color);
@@ -425,7 +425,7 @@ border: 2px solid transparent;
  background-color: transparent;
 
 }
-.table-contentse td button:hover{
+.user-table-button:hover{
  
  border: 2px solid  transparent;
  color:rgba(75, 75, 75, 1);
