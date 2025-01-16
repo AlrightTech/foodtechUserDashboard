@@ -13,3 +13,36 @@
    border: 2px solid transparent;
 }
  
+
+#chartjs-line {
+  
+    border-radius: 8px; /* Optional for rounded corners */
+    padding-inline: 10px;
+
+  
+}
+
+.linchartgrapgh{
+
+
+    border-radius: 10px;
+    border: 1px solid rgb(251, 243, 210);
+    background-color: rgba(245, 245, 245, 1); 
+
+    position: relative;
+}
+
+.input-group select{
+    background-color: transparent;
+    color: rgba(75, 75, 75, 1);
+    font-weight: 600;
+    border: 1px solid rgba(255, 210, 27, 0.2);
+    border-radius: 5px;
+
+}
+
+.askjsdsaj{
+    position: relative;
+    top: 15px;
+    z-index: 10000;
+}

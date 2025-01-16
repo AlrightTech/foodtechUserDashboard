@@ -380,6 +380,75 @@
 						</div>
 					 
 					</div>
+
+
+					<div class="row my-3">
+						<div class="col-12 ">
+							<div class="card  linchartgrapgh w-100">
+								<div class="card-header pb-0">
+									<div class="row px-3">
+										<div class="col-md-9">
+											<p class="fw-bolder mb-0 dashboard-para">Services Progress</p>
+
+									
+										</div>
+
+										<div class="col-md-3 ">
+											<div class="input-group askjsdsaj">
+										 
+												<select class="form-select">
+													<option>Select Service</option>
+													<option>One</option>
+													<option>Two</option>
+													<option>Three</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									 
+								</div>
+								<div class="card-body py-0">
+									<div class="chart">
+										<canvas id="chartjs-line"></canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+ 
+					<div class="row my-3">
+						<div class="col-12 ">
+							<div class="card  linchartgrapgh w-100">
+								<div class="card-header pb-0">
+									<div class="row px-3">
+										<div class="col-md-9">
+											<p class="fw-bolder mb-0 dashboard-para">Reports Progress</p>
+
+									
+										</div>
+
+										<div class="col-md-3 ">
+											<div class="input-group askjsdsaj">
+										 
+												<select class="form-select">
+													<option>Select Service</option>
+													<option>One</option>
+													<option>Two</option>
+													<option>Three</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									 
+								</div>
+								<div class="card-body py-0">
+									<div class="chart">
+										<canvas id="chartjs-line1"></canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
  
 				
 					
@@ -436,186 +505,171 @@
 	</svg>
 	<script src="../js/app.js"></script>
 
+
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
 			// Line chart
-			new Chart(document.getElementById("chartjs-dashboard-line"), {
-				type: 'line',
+			new Chart(document.getElementById("chartjs-line"), {
+				type: "line",
 				data: {
 					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-					datasets: [{
-						label: "Orders",
-						fill: true,
-						backgroundColor: window.theme.primary,
-						borderColor: window.theme.primary,
-						borderWidth: 2,
-						data: [3, 2, 3, 5, 6, 5, 4, 6, 9, 10, 8, 9]
-					},
-					{
-						label: "Sales ($)",
-						fill: true,
-						backgroundColor: "rgba(0, 0, 0, 0.05)",
-						borderColor: "rgba(0, 0, 0, 0.05)",
-						borderWidth: 2,
-						data: [5, 4, 10, 15, 16, 12, 10, 13, 20, 22, 18, 20]
-					}
+					datasets: [
+						{
+							label: "Current Year",
+							data: [100, 200, 200, 450, 500, 550, 650, 700, 650, 750, 850, 900, 950],
+							fill: false,
+							borderColor: "#FFC107", // Yellow line color
+							borderWidth: 2,
+							pointBackgroundColor: "#FFC107",
+							pointBorderColor: "#FFC107",
+							pointRadius: 2
+						},
+						{
+							label: "Past Year",
+							data: [200, 300, 350, 600, 450, 500, 600, 550, 650, 750, 800, 850],
+							fill: false,
+							borderColor: "#FFD54F", // Light yellow line color
+							borderWidth: 2,
+							pointBackgroundColor: "#FFD54F",
+							pointBorderColor: "#FFD54F",
+							pointRadius: 2
+						}
 					]
 				},
 				options: {
 					maintainAspectRatio: false,
-					legend: {
-						display: false
-					},
-					tooltips: {
-						intersect: false
-					},
-					hover: {
-						intersect: true
-					},
+					responsive: true,
 					plugins: {
-						filler: {
-							propagate: false
-						}
-					},
-					elements: {
-						point: {
-							radius: 0
+						legend: {
+							display: true,
+							labels: {
+								usePointStyle: true, // Use dataset point style for circles
+								color: "#000", // Legend text color
+								boxWidth: 4, // Smaller circle size
+								boxHeight: 4, // Matches height with width
+								padding: 10, // Space between legend items
+								textAlign: "left" // Ensures left alignment
+							}
 						}
 					},
 					scales: {
-						xAxes: [{
-							reverse: true,
-							gridLines: {
-								color: "rgba(0,0,0,0.0)"
-							}
-						}],
-						yAxes: [{
-							ticks: {
-								stepSize: 5
+						x: {
+							grid: {
+								display: false, // Removes vertical grid lines
 							},
-							display: true,
-							gridLines: {
-								color: "rgba(0,0,0,0)",
-								fontColor: "#fff"
+							ticks: {
+								color: "#000", // X-axis label color
 							}
-						}]
-					}
-				}
-			});
-		});
-	</script>
-	<script>
-		document.addEventListener("DOMContentLoaded", function () {
-			// Pie chart
-			new Chart(document.getElementById("chartjs-dashboard-pie"), {
-				type: 'pie',
-				data: {
-					labels: ["Chrome", "Firefox", "IE", "Other"],
-					datasets: [{
-						data: [4401, 4003, 1589],
-						backgroundColor: [
-							window.theme.primary,
-							window.theme.warning,
-							window.theme.danger,
-							"#E8EAED"
-						],
-						borderColor: "transparent"
-					}]
-				},
-				options: {
-					responsive: !window.MSInputMethodContext,
-					maintainAspectRatio: false,
-					legend: {
-						display: false
+						},
+						y: {
+							grid: {
+								color: "rgba(0, 0, 0, 0.1)", // Subtle grid lines for Y-axis
+								drawBorder: false, // Hides Y-axis border
+							},
+							ticks: {
+								stepSize: 100,
+								color: "#000" // Y-axis label color
+							}
+						}
 					},
-					cutoutPercentage: 75
+					layout: {
+						padding: {
+							top: 10, // Adds padding to prevent content overlap
+							left: 10,
+							right: 10,
+							bottom: 10
+						}
+					},
+					backgroundColor: "#f9f9f9" // Chart background color
 				}
 			});
 		});
 	</script>
+	
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
-			// Bar chart
-			new Chart(document.getElementById("chartjs-dashboard-bar"), {
-				type: 'bar',
+			// Line chart
+			new Chart(document.getElementById("chartjs-line1"), {
+				type: "line",
 				data: {
 					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-					datasets: [{
-						label: "This year",
-						backgroundColor: window.theme.primary,
-						borderColor: window.theme.primary,
-						hoverBackgroundColor: window.theme.primary,
-						hoverBorderColor: window.theme.primary,
-						data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
-						barPercentage: .75,
-						categoryPercentage: .5
-					}]
+					datasets: [
+						{
+							label: "Current Year",
+							data: [100, 200, 200, 450, 500, 550, 650, 700, 650, 750, 850, 900, 950],
+							fill: false,
+							borderColor: "#FFC107", // Yellow line color
+							borderWidth: 2,
+							pointBackgroundColor: "#FFC107",
+							pointBorderColor: "#FFC107",
+							pointRadius: 2
+						},
+						{
+							label: "Past Year",
+							data: [200, 300, 350, 600, 450, 500, 600, 550, 650, 750, 800, 850],
+							fill: false,
+							borderColor: "#FFD54F", // Light yellow line color
+							borderWidth: 2,
+							pointBackgroundColor: "#FFD54F",
+							pointBorderColor: "#FFD54F",
+							pointRadius: 2
+						}
+					]
 				},
 				options: {
 					maintainAspectRatio: false,
-					legend: {
-						display: false
+					responsive: true,
+					plugins: {
+						legend: {
+							display: true,
+							labels: {
+								usePointStyle: true, // Use dataset point style for circles
+								color: "#000", // Legend text color
+								boxWidth: 4, // Smaller circle size
+								boxHeight: 4, // Matches height with width
+								padding: 10, // Space between legend items
+								textAlign: "left" // Ensures left alignment
+							}
+						}
 					},
 					scales: {
-						yAxes: [{
-							gridLines: {
-								display: false
+						x: {
+							grid: {
+								display: false, // Removes vertical grid lines
 							},
-							stacked: false,
 							ticks: {
-								stepSize: 20
+								color: "#000", // X-axis label color
 							}
-						}],
-						xAxes: [{
-							stacked: false,
-							gridLines: {
-								color: "transparent"
+						},
+						y: {
+							grid: {
+								color: "rgba(0, 0, 0, 0.1)", // Subtle grid lines for Y-axis
+								drawBorder: false, // Hides Y-axis border
+							},
+							ticks: {
+								stepSize: 100,
+								color: "#000" // Y-axis label color
 							}
-						}]
-					}
+						}
+					},
+					layout: {
+						padding: {
+							top: 10, // Adds padding to prevent content overlap
+							left: 10,
+							right: 10,
+							bottom: 10
+						}
+					},
+					backgroundColor: "#f9f9f9" // Chart background color
 				}
 			});
 		});
 	</script>
-	<script>
-		document.addEventListener("DOMContentLoaded", function () {
-			var map = new jsVectorMap({
-				map: "world",
-				selector: "#world_map",
-				zoomButtons: true,
-				selectedRegions: [
-					'US',
-					'SA',
-					'DE',
-					'FR',
-					'CN',
-					'AU',
-					'BR',
-					'IN',
-					'GB'
-				],
-				regionStyle: {
-					initial: {
-						fill: '#e4e4e4',
-						"fill-opacity": 0.9,
-						stroke: 'none',
-						"stroke-width": 0,
-						"stroke-opacity": 0
-					},
-					selected: {
-						fill: window.theme.primary,
-					}
-				},
-				zoomOnScroll: false
-			});
-			window.addEventListener("resize", () => {
-				map.updateSize();
-			});
-			setTimeout(function () {
-				map.updateSize();
-			}, 250);
-		});
-	</script>
+	
+	
+	
 	<script>
 		$(function () {
 			$('#datatables-dashboard-projects').DataTable({
