@@ -88,7 +88,7 @@
                         </a>
 
                     </li>
-                    <li class="sidebar-item active mb-3">
+                    <li class="sidebar-item  mb-3">
 
 
                         <a href="./repots.html" class="sidebar-link">
@@ -108,7 +108,7 @@
                         </a>
 
                     </li>
-                    <li class="sidebar-item  mb-3">
+                    <li class="sidebar-item active mb-3">
 
 
                         <a href="./setting.html" class="sidebar-link">
@@ -290,82 +290,231 @@
                     </ul>
                 </div>
             </nav>
-            <main class="content m-0">
-                <div class="container-fluid py-2 py-sm-4">
-        
-                  <h2 class="verification-heading"> Uploard Report</h2>
-                  <div class="form p-2 p-sm-4">
-        
-                    <form action="">
-                      <h3 class="verification-heading">Fill detail</h3>
-                      
-                        <div class="mb-3">
-                          <label for="firstName" class="form-label lable-text">Tital</label>
-                          <input type="text" class="form-input" id="firstName" placeholder="FSSAI License Application ">
+            <main class="content mt-0">
+                <div class="container-fluid p-sm-2">
+
+
+                    <h1 class="dashboard-heading-2 fw-bolder">Setting</h1>
+                    <div class="row">
+                        <!-- Sidebar -->
+                        <div class="col-md-3">
+                            <nav class=" px-3 py-2 setting-nav">
+
+                                <ul class="nav flex-column" id="myTab" role="tablist">
+                                    <li class="nav-item mb-2 ">
+                                        <a class="nav-link active setting-navtab" id="profile-tab" data-bs-toggle="tab"
+                                            href="#profile" role="tab" aria-controls="profile" aria-selected="true">
+                                            Profile
+                                        </a>
+                                    </li>
+                                    <li class="nav-item mb-2">
+                                        <a class="nav-link setting-navtab" id="notifications-tab" data-bs-toggle="tab"
+                                            href="#notifications" role="tab" aria-controls="notifications"
+                                            aria-selected="false">
+                                            Notifications
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </nav>
                         </div>
-                        <div class="mb-3">
-                          <label for="lastName" class="form-label lable-text">Price</label>
-                          <input type="text" class="form-input" id="lastName" placeholder="FSSAI License Application ">
-                        </div>
-                      
-                      <div class="mb-3">
-                        <label for="message" class="form-label lable-text">Description</label>
-                        <input type="text" class="form-input " id="send-messege" placeholder="">
-                      </div>
-                      
-                      
-        
-                      <div class="">
-                        <label for="message" class="form-label lable-text">Add ID Front PDF</label>
-                        <div class="upload__box position-relative idCard-uploard form-input">
-                            <div class="upload__btn-box">
-                                <label class="upload__btn">
-                                    <p><img src="../img/avatars/upload-img-svg.svg" alt="">Upload PDF</p>
-                                    <input type="file" accept="application/pdf" class="upload__inputfile">
-                                </label>
+                        <div class="col-md-9 mt-sm-0 mt-3">
+
+                            <div class="tab-content  w-100">
+                                <div class="tab-pane fade show active" id="profile" role="tabpanel"
+                                    aria-labelledby="profile-tab">
+
+
+                                    <section class="container-fluid setting-nav">
+
+                                        
+                                           
+                                            <div class="food-updateprofile-right d-flex flex-sm-row flex-column gap-md-3 gap-2 align-items-center justify-content-between">
+                                                <div class="d-flex align-items-center gap-3">
+                                                    <img src="../img/dashboard/profile-imgggss.png"
+                                                    style="width: 100px; height: 100px; border-radius: 50%;" alt="">
+                                                <div class="food-username">
+                                                    <p class="mb-2">Alexa Rawles</p>
+                                                    <span> alexarawles@gmail.com</span>
+
+
+                                                </div>
+                                                </div>
+                                                <div class="profile-verify mb-sm-0 mb-3">
+                                                    <a href="" class="py-lg-3 py-2  px-2">Verify Documents</a>
+                                                </div>
+                                            </div>
+
+
+                                    </section>
+
+
+                                    <section class="container-fluid setting-nav mt-3">
+                                        <div class="form p-2 p-sm-4">
+
+                                            <form action="">
+                                                <h3 class="verification-heading mb-3">User Detail</h3>
+                                                <div class="row mb-3">
+                                                    <div class="col-sm-6">
+                                                        <label for="firstName" class="form-label lable-text">First
+                                                            Name</label>
+                                                        <input type="text" class="form-input" id="firstName"
+                                                            placeholder="Asim">
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <label for="lastName" class="form-label lable-text">Last
+                                                            Name</label>
+                                                        <input type="text" class="form-input" id="lastName"
+                                                            placeholder="Khattak">
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="mb-3">
+                                                    <label for="message" class="form-label lable-text">Enter
+                                                        Email</label>
+                                                    <input type="email" class="form-input" id="send-messege"
+                                                        placeholder="qasim@gmail.com">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="message" class="form-label lable-text">Enter
+                                                        Email</label>
+                                                    <input type="number" class="form-input" id="send-messege"
+                                                        placeholder="+19|345566">
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <!-- Password Field -->
+                                                    <label for="passwordInput"
+                                                        class="form-label lable-text">Password</label>
+                                                    <div class="input-group position-relative">
+                                                        <input type="password" id="passwordInput" class="form-input"
+                                                            placeholder="Enter your password">
+                                                        <span
+                                                            class="input-group-text position-absolute food-toggle-password"
+                                                            id="togglePassword">
+                                                            <i class="bi bi-eye-slash"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="mb-3 w-100 d-flex justify-content-end">
+                                                    <input type="submit" class=" food-profile-submit px-3 py-1"
+                                                        value="Save">
+
+                                                </div>
+
+                                            </form>
+
+                                        </div>
+                                    </section>
+                                </div>
+                                <div class="tab-pane fade" id="notifications" role="tabpanel"
+                                    aria-labelledby="notifications-tab">
+                                    <!-- <h3>Notifications Content</h3> -->
+                                    <!-- <p>This is the notifications section.</p> -->
+                                    <section class="container-fluid setting-nav p-0">
+                                        <h2 class="notification-heading mt-3 ms-3 mb-2">Notifications</h2>
+                                        <div class="notification-item  active">
+                                            <img src="../img/dashboard/python-icon.png" alt="Icon">
+                                            <div class="border-noti active me-3"></div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at
+                                                moles...</p>
+                                        </div>
+                                        <div class="notification-item ">
+                                            <img src="../img/dashboard/python-icon.png" alt="Icon">
+                                            <div class="border-noti  me-3"></div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at
+                                                moles...</p>
+                                        </div>
+                                        <div class="notification-item ">
+                                            <img src="../img/dashboard/python-icon.png" alt="Icon">
+                                            <div class="border-noti me-3"></div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at
+                                                moles...</p>
+                                        </div>
+                                        <div class="notification-item ">
+                                            <img src="../img/dashboard/python-icon.png" alt="Icon">
+                                            <div class="border-noti me-3"></div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at
+                                                moles...</p>
+                                        </div>
+                                        <div class="notification-item">
+                                            <img src="../img/dashboard/python-icon.png" alt="Icon">
+                                            <div class="border-noti me-3"></div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at
+                                                moles...</p>
+                                        </div>
+                                        <div class="notification-item">
+                                            <img src="../img/dashboard/python-icon.png" alt="Icon">
+                                            <div class="border-noti me-3"></div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at
+                                                moles...</p>
+                                        </div>
+                                        <div class="notification-item">
+                                            <img src="../img/dashboard/python-icon.png" alt="Icon">
+                                            <div class="border-noti me-3"></div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at
+                                                moles...</p>
+                                        </div>
+                                        <div class="notification-item">
+                                            <img src="../img/dashboard/python-icon.png" alt="Icon">
+                                            <div class="border-noti me-3"></div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at
+                                                moles...</p>
+                                        </div>
+                                        <div class="notification-item">
+                                            <img src="../img/dashboard/python-icon.png" alt="Icon">
+                                            <div class="border-noti me-3"></div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at
+                                                moles...</p>
+                                        </div>
+                                        <div class="notification-item">
+                                            <img src="../img/dashboard/python-icon.png" alt="Icon">
+                                            <div class="border-noti me-3"></div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at
+                                                moles...</p>
+                                        </div>
+                                        <div class="notification-item">
+                                            <img src="../img/dashboard/python-icon.png" alt="Icon">
+                                            <div class="border-noti me-3"></div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at
+                                                moles...</p>
+                                        </div>
+                                        <div class="notification-item">
+                                            <img src="../img/dashboard/python-icon.png" alt="Icon">
+                                            <div class="border-noti me-3"></div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet at
+                                                moles...</p>
+                                        </div>
+                                    </section>
+
+                                </div>
+
+
+                               
                             </div>
-                            <div class="upload__file-wrap"></div>
                         </div>
                     </div>
-                      
-        
-                      <div class="mt-5 d-flex justify-content-end">
-                        <button class="btn py-2" type="button" data-bs-toggle="modal" data-bs-target="#successModal">Uploard PDF<img
-                            src="../img/avatars/go-forward-icon.svg" alt="" class="ms-3"></button>
-                      </div>
-                    </form>
-        
-                  </div>
-        
                 </div>
-              </main>
-            <!-- <footer class="footer">
-				<div class="container-fluid">
-					<div class="row text-muted">
-						<div class="col-8 text-start">
-							<ul class="list-inline">
-								<li class="list-inline-item">
-									<a class="text-muted" href="#">Support</a>
-								</li>
-								<li class="list-inline-item">
-									<a class="text-muted" href="#">Privacy</a>
-								</li>
-								<li class="list-inline-item">
-									<a class="text-muted" href="#">Terms of Service</a>
-								</li>
-								<li class="list-inline-item">
-									<a class="text-muted" href="#">Contact</a>
-								</li>
-							</ul>
-						</div>
-						<div class="col-4 text-end">
-							<p class="mb-0">
-								&copy; 2023 - <a href="dashboard-default.html" class="text-muted">Spark</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</footer> -->
+
+                <script>
+                    // Toggle sidebar visibility and rotate button
+                    const sidebarToggle = document.getElementById("sidebarToggle");
+                    const sidebarMenu = document.getElementById("sidebarMenu");
+
+                    sidebarToggle.addEventListener("click", function () {
+                        // Toggle sidebar visibility
+                        sidebarMenu.classList.toggle("d-none");
+
+                        // Toggle rotation class
+                        sidebarToggle.classList.toggle("rotated");
+                    });
+                </script>
+            </main>
+
+
         </div>
     </div>
 
@@ -379,42 +528,6 @@
         </defs>
     </svg>
     <script src="../js/app.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const fileInput = document.querySelector('.upload__inputfile');
-            const fileWrap = document.querySelector('.upload__file-wrap');
-    
-            fileInput.addEventListener('change', function(event) {
-                fileWrap.innerHTML = ''; // Clear existing files
-                const files = event.target.files;
-    
-                if (files.length > 0) {
-                    Array.from(files).forEach(file => {
-                        if (file.type === 'application/pdf') {
-                            const fileItem = document.createElement('div');
-                            fileItem.className = 'file-item';
-                            fileItem.textContent = `File: ${file.name}`;
-    
-                            const removeBtn = document.createElement('button');
-                            removeBtn.className = 'remove-btn';
-                            removeBtn.textContent = 'Remove';
-                            removeBtn.addEventListener('click', () => {
-                                fileInput.value = ''; // Clear file input
-                                fileWrap.innerHTML = ''; // Clear file wrap
-                            });
-    
-                            fileItem.appendChild(removeBtn);
-                            fileWrap.appendChild(fileItem);
-                        } else {
-                            alert('Only PDF files are allowed!');
-                            fileInput.value = ''; // Clear file input
-                        }
-                    });
-                }
-            });
-        });
-    </script>
 
     <script>
 
