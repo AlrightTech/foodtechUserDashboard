@@ -12,4 +12,54 @@
     color: rgba(0, 0, 0, 0.8);
    border: 2px solid transparent;
 }
+.list-img{
+    width: 40px;
+    height: 40px;
+}
+.user-list-inactive-status{
+    color: rgb(238, 58, 58);
+    border: 1px solid rgb(240, 103, 103);
+    width: 80px;
+    border-radius: 5px;
+    text-align: center;
+    padding-inline: 5px;
+    padding-block: 3px;
+    
+}
+.user-list-active-status{
+    color: rgb(50, 152, 50);
+    border: 1px solid rgb(156, 204, 156);
+    width: 80px;
+    border-radius: 5px;
+    text-align: center;
+    padding-inline: 5px;
+    padding-block: 3px;
+}
+.search-user-list{
+    background-color: #f5f5f5;
+    border: none;
+    
+}
+.file-item {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.remove-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.remove-btn:hover {
+    background-color: darkred;
+}
  
