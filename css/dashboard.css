@@ -433,6 +433,8 @@ p {
   color: rgba(75, 75, 75, 1) !important;
   font-weight: 600;
 }
-.table-mobile-screen{
-  width: 600px;
+@media (max-width: 576px) {
+  .table-mobile-screen{
+    width: 600px;
+  } 
 }

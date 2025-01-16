@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="./css/FSSAILicense.css">
  
     <link rel="stylesheet" href="./css/dashboard.css">
+	<link rel="stylesheet" href="./css/Reports.css">
  
   
 
@@ -740,7 +741,30 @@
 				
 				
 						</table>
-				
+						<div class="pagination-container">
+							<nav>
+							  <ul class="pagination">
+								<li class="page-item" id="prev-btn">
+								  <button class="page-link py-2">Previous</button>
+								</li>
+								<li class="page-item active pt-1" data-page="1">
+								  <button class="page-link">1</button>
+								</li>
+								<li class="page-item pt-1" data-page="2">
+								  <button class="page-link">2</button>
+								</li>
+								<li class="page-item pt-1" data-page="3">
+								  <button class="page-link">3</button>
+								</li>
+								<li class="page-item pt-1" data-page="4">
+								  <button class="page-link">4</button>
+								</li>
+								<li class="page-item" id="next-btn">
+								  <button class="page-link py-2">Next</button>
+								</li>
+							  </ul>
+							</nav>
+						  </div>
 				
 					</div>
 
@@ -795,6 +819,50 @@
 		</defs>
 	</svg>
 	<script src="js/app.js"></script>
+
+	<script>
+
+		const prevBtn = document.getElementById('prev-btn');
+		const nextBtn = document.getElementById('next-btn');
+		const pageItems = document.querySelectorAll('.page-item[data-page]');
+	  
+		let currentPage = 1;
+	  
+		function updatePagination() {
+		  pageItems.forEach(item => {
+			item.classList.remove('active');
+			if (parseInt(item.getAttribute('data-page')) === currentPage) {
+			  item.classList.add('active');
+			}
+		  });
+	  
+		  prevBtn.classList.toggle('disabled', currentPage === 1);
+		  nextBtn.classList.toggle('disabled', currentPage === pageItems.length);
+		}
+	  
+		pageItems.forEach(item => {
+		  item.addEventListener('click', () => {
+			currentPage = parseInt(item.getAttribute('data-page'));
+			updatePagination();
+		  });
+		});
+	  
+		prevBtn.addEventListener('click', () => {
+		  if (currentPage > 1) {
+			currentPage--;
+			updatePagination();
+		  }
+		});
+	  
+		nextBtn.addEventListener('click', () => {
+		  if (currentPage < pageItems.length) {
+			currentPage++;
+			updatePagination();
+		  }
+		});
+	  
+		updatePagination();
+	  </script>
 
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
