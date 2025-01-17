@@ -126,6 +126,16 @@
     background-color: transparent;
    
    }
+   .sub-service{
+    background-color: #f5f5f5;
+    border: 1px solid rgb(246, 241, 223);
+    border-radius: 10px;
+   }
    
+   .select{
+    background-color: #FAFAFA;
+    border: 1px solid rgb(246, 241, 223);
+    border-radius: 6px;
+   }
  
  
