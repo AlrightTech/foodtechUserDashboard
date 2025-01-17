@@ -70,6 +70,15 @@
     padding-inline: 5px;
     padding-block: 3px;
 }
+.pendinglicense-uploard-button{
+    color: rgb(50, 152, 50);
+    border: 1px solid rgb(156, 204, 156);
+    width: 80px;
+    border-radius: 5px;
+    text-align: center;
+    padding-inline: 5px;
+    padding-block: 3px;
+}
 .search-user-list{
     background-color: #f5f5f5;
     border: none;
