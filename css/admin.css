@@ -137,5 +137,66 @@
     border: 1px solid rgb(246, 241, 223);
     border-radius: 6px;
    }
+   .popup-content{
+    background-color: #fafafa;
+    border: 1px solid rgb(246, 241, 223)
+   }
+   .popup-input{
+    border-radius: 8px !important;
+    padding: 11px !important;
+    border-bottom: 1px solid var(--primary-color) !important;
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+    background-color: #f5f5f5 !important;
+    appearance: none;
+    background-clip: padding-box;
+    color: #495057;
+    display: block;
+    font-size: .9375rem;
+    font-weight: 400;
+    line-height: 1.5;
+    transition: border-color .15s
+     ease-in-out, box-shadow .15s
+      ease-in-out;
+    width: 100%;
+   }
  
+   .upload-file{
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+   }
+   .dropdown-item-view{
+    background-color: transparent;
+    border: 0;
+    border-radius: var(--bs-dropdown-item-border-radius, 0);
+    clear: both;
+    color: var(--bs-dropdown-link-color);
+    display: block;
+    font-weight: 400;
+    padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+    text-align: inherit;
+    white-space: nowrap;
+    width: 100%;
+   }
+   .login-content{
+    font-size: 15px;
+    font-weight: 600;
+    color: #4B4B4B;
+    text-align: center;
+   }
+   .forgot{
+    color: #FFD21B;
+    font-size: 14px;
+    font-weight: 500;
+    
+   }
+   .border-hr{
+    color: #DDE1E6;
+   }
+   .no-account{
+    color: #4B4B4B;
+    font-size: 16px;
+    font-weight: 600;
+   }
  
