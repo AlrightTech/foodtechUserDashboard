@@ -49,7 +49,7 @@
 
 				<ul class="sidebar-nav">
 					 
-					<li class="sidebar-item mb-3">
+					<li class="sidebar-item  mb-3">
 
 
 						<a href="./index.html" class="sidebar-link">
@@ -66,7 +66,7 @@
 						</a>
 						 
 					</li>
-					<li class="sidebar-item  mb-3">
+					<li class="sidebar-item active mb-3">
 
 
 						<a href="./manager-user.html" class="sidebar-link">
@@ -162,7 +162,7 @@
 						</a>
 						 
 					</li>
-                    <li class="sidebar-item  mb-3">
+                    <li class="sidebar-item   mb-3">
 
 
 						<a href="./User-request.html" class="sidebar-link">
@@ -181,7 +181,7 @@
 						 
 					</li>
                    
-                    <li class="sidebar-item active  mb-3">
+                    <li class="sidebar-item  mb-3">
 						<a      class="sidebar-link" href="./Dacoments.html">
 							<!-- <i class="align-middle me-2 fas fa-fw fa-home"></i>  -->
                             
@@ -349,29 +349,138 @@
 					</ul>
 				</div>
 			</nav>
-			<main class=" quicksand-font pt-2 ps-2">
-				<div class="container-fluid p-sm-2 ">
-                    <div class="d-flex flex-wrap justify-content-between my-3 px-sm-3">
-                        <div>
-                          <h2 class="m-0 fw-bolder">Documents</h2>
-                        </div>
-                        <div class="d-sm-flex align-items-center gap-3">
+            <main class="content m-0">
+                <div class="container-fluid p-sm-2">
         
-                            <div class="position-relative select-input mb-3 mb-sm-0">
-                                <input type="search" placeholder="Search here"
-                                    class="py-1 px-3 search-user-list rounded-3 select-input">
-                                <div class="position-absolute  search-icon-position">
-                                    <img src="../img/avatars/search-icon.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="mb-3 mb-sm-0">
-                                
-                                    <button type="button" data-bs-toggle="modal" data-bs-target="#successModal" class="btn py-2">+Add New Report</button>
-                                
-                            </div>
-                        </div>
-                      </div>
+                  <div class="d-flex flex-wrap justify-content-between my-3 px-sm-3">
+                    <div>
+                      <h2 class="m-0 fw-bolder">User Profile</h2>
+                    </div>
                     
+                        <div class="mb-3 mb-sm-0">
+                            <a href="./upload-reports.html">
+                                <button class="btn py-2">Login as User</button>
+                            </a>
+                        </div>
+                    
+                  </div>
+
+                  <section class="container-fluid setting-nav mb-3">
+
+                                        
+                                           
+                    <div class="food-updateprofile-right d-flex flex-sm-row flex-column gap-md-3 gap-2 align-items-center justify-content-between">
+                        <div class="d-flex flex-wrap justify-content-center  my-2 align-items-center gap-3">
+                            <img src="../img/dashboard/profile-imgggss.png"
+                            style="width: 100px; height: 100px; border-radius: 50%;" alt="" class="align-items-center">
+                        <div class="food-username">
+                            <p class="mb-2">Alexa Rawles</p>
+                            <span> alexarawles@gmail.com</span>
+
+
+                        </div>
+                        </div>
+                        <div class="profile-verify mb-sm-0 mb-3 mt-2 mt-sm-0">
+                            <a href="" class="py-lg-3 py-2  px-2">Verify Documents</a>
+                        </div>
+                    </div>
+
+
+            </section>
+
+                  <div class="table-responsive tablereports ">
+                    <table class="table mb-0 px-3">
+                      <thead>
+                        <tr class="tablaeheading">
+                          <th scope="col">ID</th>
+                          <th scope="col">Category</th>
+                          <th scope="col">Details</th>
+                          <th scope="col">Start Date</th>
+                          <th scope="col">End Date</th>
+                          <th scope="col">Action</th>
+        
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="table-contentse">
+                          <td><strong>01</strong></td>
+                          <td >
+                           License
+                          </td>
+                          <td>Food</td>
+                          <td>
+                            09/Nov/24
+                          </td>
+                          <td>
+                            09/Nov/24
+                          </td>
+                        
+                          
+                          <td>
+                  
+                            <a href="">
+                            <button class="admin-table-button px-2">Manage</button>
+                            </a>
+                          </td>
+                  
+                          </tr>
+                          <tr class="table-contentse">
+                            <td><strong>01</strong></td>
+                            <td >
+                             License
+                            </td>
+                            <td>Food</td>
+                            <td>
+                              09/Nov/24
+                            </td>
+                            <td>
+                              09/Nov/24
+                            </td>
+                          
+                            
+                            <td>
+                    
+                              <a href="">
+                              <button class="admin-table-button px-2">Manage</button>
+                              </a>
+                            </td>
+                    
+                            </tr>
+                            <tr class="table-contentse">
+                                <td><strong>01</strong></td>
+                                <td >
+                                 License
+                                </td>
+                                <td>Food</td>
+                                <td>
+                                  09/Nov/24
+                                </td>
+                                <td>
+                                  09/Nov/24
+                                </td>
+                              
+                                
+                                <td>
+                        
+                                  <a href="">
+                                  <button class="admin-table-button px-2">Manage</button>
+                                  </a>
+                                </td>
+                        
+                                </tr>
+                         
+                              
+                                                
+                         
+        
+                      </tbody>
+                    </table>
+        
+                    
+        
+                  </div>
+                  <div class="container-fluid p-sm-2 ">
+					<h2 class=" fw-bolder my-4">Uploaded Documents</h2>
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-lg-4 col-sm-6">
@@ -386,20 +495,8 @@
                                       <p class="pan-card-subtitle">Linking You to Opportunity</p>
                                       
                                         <div class="dropdown position-relative document-dropdown position-absolute">
-                                            <a
-                                              class=" dropdown-toggle table-dropdown-toggle"
-                                              type="button"
-                                              id="dropdownMenuButton"
-                                              data-bs-toggle="dropdown"
-                                              aria-expanded="false"
-                                            >
-                                            <i class=" fas fa-ellipsis-h" style="transform: rotate(90deg); font-size: 13px;"></i>
-                                        </a>
-                                            <ul class="dropdown-menu table-dropdown-menu position-absolute" aria-labelledby="dropdownMenuButton">
-                                              <li><a class="dropdown-item table-dropdown-item d-flex alignitems-center gap-2" href="#"><img src="../img/dashboard/document-edit.png" style="width: 20px; height: 20px;" alt=""> Edit</a></li>
-                                              <li><a class="dropdown-item table-dropdown-item d-flex alignitems-center gap-2" href="#"  > <img src="../img/dashboard/document-delete.png" style="width: 20px; height: 20px;" alt=""> Delete</a></li>
-                                              
-                                            </ul>
+                                           <img src="../img/avatars/addDocument-icon.svg" alt="">
+                                            
                                           </div>
                                       </div>
                                     
@@ -417,56 +514,13 @@
                                       <p class="pan-card-subtitle">Linking You to the Nation</p>
                                       
                                         <div class="dropdown position-relative document-dropdown position-absolute">
-                                            <a
-                                              class=" dropdown-toggle table-dropdown-toggle"
-                                              type="button"
-                                              id="dropdownMenuButton"
-                                              data-bs-toggle="dropdown"
-                                              aria-expanded="false"
-                                            >
-                                            <i class=" fas fa-ellipsis-h" style="transform: rotate(90deg); font-size: 13px;"></i>
-                                        </a>
-                                            <ul class="dropdown-menu table-dropdown-menu position-absolute" aria-labelledby="dropdownMenuButton">
-                                              <li><a class="dropdown-item table-dropdown-item d-flex alignitems-center gap-2" href="#"><img src="../img/dashboard/document-edit.png" style="width: 20px; height: 20px;" alt=""> Edit</a></li>
-                                              <li><a class="dropdown-item table-dropdown-item d-flex alignitems-center gap-2" href="#"  > <img src="../img/dashboard/document-delete.png" style="width: 20px; height: 20px;" alt=""> Delete</a></li>
-                                              
-                                            </ul>
+                                           <img src="../img/avatars/addDocument-icon.svg" alt="">
                                           </div>
                                       </div>
                                     
                                   </div>
                             </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="card pan-card">
-                                    <img
-                                      src="../img/dashboard/light-bill.png" 
-                                      alt="PAN Card" 
-                                      class="card-img-top"
-                                    >
-                                    <div class="card-body text-start position-relative py-2 px-3">
-                                      <h5 class="pan-card-title">Light Bill</h5>
-                                      <p class="pan-card-subtitle">Brightening Your Life, One Bill at a Time</p>
-                                      
-                                        <div class="dropdown position-relative document-dropdown position-absolute">
-                                            <a
-                                              class=" dropdown-toggle table-dropdown-toggle"
-                                              type="button"
-                                              id="dropdownMenuButton"
-                                              data-bs-toggle="dropdown"
-                                              aria-expanded="false"
-                                            >
-                                            <i class=" fas fa-ellipsis-h" style="transform: rotate(90deg); font-size: 13px;"></i>
-                                        </a>
-                                            <ul class="dropdown-menu table-dropdown-menu position-absolute" aria-labelledby="dropdownMenuButton">
-                                              <li><a class="dropdown-item table-dropdown-item d-flex alignitems-center gap-2" href="#"><img src="../img/dashboard/document-edit.png" style="width: 20px; height: 20px;" alt=""> Edit</a></li>
-                                              <li><a class="dropdown-item table-dropdown-item d-flex alignitems-center gap-2" href="#"  > <img src="../img/dashboard/document-delete.png" style="width: 20px; height: 20px;" alt=""> Delete</a></li>
-                                              
-                                            </ul>
-                                          </div>
-                                      </div>
-                                    
-                                  </div>
-                            </div>
+                            
                            
                         </div>
                     </div>
@@ -474,37 +528,36 @@
                     
 
 				</div>
-			</main>
-	
-				 <!-- Modal -->
-				 <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
-					<div class="modal-dialog modal-dialog-centered">
-						<div class="modal-content popup-content p-sm-3 p-1">
-							<h2 class="verification-heading">Add New Doc</h2>
-							<div class="mb-3">
-								<label for="message" class="form-label lable-text">Document</label>
-								<input type="email" class="popup-input" id="send-messege" placeholder="Select Document">
-							</div>
-							<div class="mb-3">
-								<label for="message" class="form-label lable-text">Description</label>
-								<input type="email" class="popup-input" id="send-messege" placeholder="Enter Description">
-							</div>
-							<div class="">
-								<label for="message" class="form-label lable-text">Upload images</label>
-								<div class="upload-file  position-relative idCard-uploard popup-input">
-									<div class="upload__btn-box">
-										<label class="upload__btn">
-											<p><img src="../img/avatars/upload-img-svg.svg" alt="" class="me-2">Upload file</p>
-											<input type="file" multiple="" data-max_length="20" class="upload__inputfile">
-										</label>
-									</div>
-									<div class="upload__img-wrap"></div>
-								</div>
-							</div>
-							
+        
+                </div>
+              </main>
+	<!-- <footer class="footer">
+				<div class="container-fluid">
+					<div class="row text-muted">
+						<div class="col-8 text-start">
+							<ul class="list-inline">
+								<li class="list-inline-item">
+									<a class="text-muted" href="#">Support</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="#">Privacy</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="#">Terms of Service</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="#">Contact</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-4 text-end">
+							<p class="mb-0">
+								&copy; 2023 - <a href="dashboard-default.html" class="text-muted">Spark</a>
+							</p>
 						</div>
 					</div>
 				</div>
+			</footer> -->
 	</div>
 	</div>
 
