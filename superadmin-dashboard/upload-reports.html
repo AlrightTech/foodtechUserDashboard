@@ -26,6 +26,8 @@
  
 	<link rel="stylesheet" href="../css/admin.css">
 	<link rel="stylesheet" href="../css/Reports.css">
+    <link rel="stylesheet" href="../css/setting.css">
+	
   
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" rel="stylesheet" />
@@ -47,7 +49,7 @@
 
 				<ul class="sidebar-nav">
 					 
-					<li class="sidebar-item active mb-3">
+					<li class="sidebar-item  mb-3">
 
 
 						<a href="./index.html" class="sidebar-link">
@@ -67,7 +69,7 @@
 					<li class="sidebar-item  mb-3">
 
 
-						<a href="./manage-user.html" class="sidebar-link">
+						<a href="./manager-user.html" class="sidebar-link">
 
 
 				 
@@ -82,25 +84,49 @@
 						</a>
 						 
 					</li>
-					<li class="sidebar-item  mb-3">
+                    <li class="sidebar-item  mb-3">
 
 
-						<a href="./repots.html" class="sidebar-link">
+						<a href="./manager-admin.html" class="sidebar-link">
 
 
 				 
-							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M2.5 6.16667V3C2.5 2.86739 2.55268 2.74021 2.64645 2.64645C2.74021 2.55268 2.86739 2.5 3 2.5H7.83333C7.96594 2.5 8.09312 2.55268 8.18689 2.64645C8.28066 2.74021 8.33333 2.86739 8.33333 3V6.16667C8.33333 6.29927 8.28066 6.42645 8.18689 6.52022C8.09312 6.61399 7.96594 6.66667 7.83333 6.66667H3C2.86739 6.66667 2.74021 6.61399 2.64645 6.52022C2.55268 6.42645 2.5 6.29927 2.5 6.16667ZM11.6667 17V13.8333C11.6667 13.7007 11.7193 13.5735 11.8131 13.4798C11.9069 13.386 12.0341 13.3333 12.1667 13.3333H17C17.1326 13.3333 17.2598 13.386 17.3536 13.4798C17.4473 13.5735 17.5 13.7007 17.5 13.8333V17C17.5 17.1326 17.4473 17.2598 17.3536 17.3536C17.2598 17.4473 17.1326 17.5 17 17.5H12.1667C12.0341 17.5 11.9069 17.4473 11.8131 17.3536C11.7193 17.2598 11.6667 17.1326 11.6667 17ZM11.6667 10.3333V3C11.6667 2.86739 11.7193 2.74021 11.8131 2.64645C11.9069 2.55268 12.0341 2.5 12.1667 2.5H17C17.1326 2.5 17.2598 2.55268 17.3536 2.64645C17.4473 2.74021 17.5 2.86739 17.5 3V10.3333C17.5 10.4659 17.4473 10.5931 17.3536 10.6869C17.2598 10.7807 17.1326 10.8333 17 10.8333H12.1667C12.0341 10.8333 11.9069 10.7807 11.8131 10.6869C11.7193 10.5931 11.6667 10.4659 11.6667 10.3333ZM2.5 17V9.66667C2.5 9.53406 2.55268 9.40688 2.64645 9.31311C2.74021 9.21934 2.86739 9.16667 3 9.16667H7.83333C7.96594 9.16667 8.09312 9.21934 8.18689 9.31311C8.28066 9.40688 8.33333 9.53406 8.33333 9.66667V17C8.33333 17.1326 8.28066 17.2598 8.18689 17.3536C8.09312 17.4473 7.96594 17.5 7.83333 17.5H3C2.86739 17.5 2.74021 17.4473 2.64645 17.3536C2.55268 17.2598 2.5 17.1326 2.5 17Z" stroke="#101010" stroke-width="1.5"/>
+							<svg width="20" height="20" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M13.94 15.3617H15.7217C15.8784 15.3641 16.0334 15.3286 16.1734 15.2581C16.3134 15.1877 16.4342 15.0843 16.5256 14.957C16.617 14.8297 16.6762 14.6821 16.6981 14.5269C16.7201 14.3717 16.7041 14.2135 16.6517 14.0658C16.1974 13.0934 15.4781 12.2688 14.5765 11.6866C13.6749 11.1044 12.6273 10.7881 11.5542 10.7742M11.5542 8.475C11.9552 8.47511 12.3523 8.39621 12.7229 8.24282C13.0934 8.08942 13.4301 7.86453 13.7137 7.58099C13.9973 7.29745 14.2223 6.96082 14.3758 6.59032C14.5293 6.21982 14.6083 5.8227 14.6083 5.42166C14.6094 5.01992 14.5312 4.62192 14.3782 4.25045C14.2252 3.87899 14.0004 3.54137 13.7167 3.25695C13.433 2.97253 13.0959 2.74689 12.7248 2.59297C12.3537 2.43906 11.9559 2.35989 11.5542 2.36M6.78332 8.57083C7.70144 8.56862 8.58119 8.2023 9.22954 7.55223C9.87789 6.90216 10.2419 6.02145 10.2417 5.10333C10.2417 4.1859 9.87721 3.30605 9.22849 2.65733C8.57977 2.00861 7.69992 1.64417 6.78249 1.64417C5.86506 1.64417 4.98521 2.00861 4.33649 2.65733C3.68777 3.30605 3.32332 4.1859 3.32332 5.10333C3.32332 6.02145 3.68753 6.90208 4.33603 7.55199C4.98454 8.2019 5.86437 8.56801 6.78249 8.57M10.6875 16.3558C10.981 16.3554 11.2687 16.2738 11.5187 16.1199C11.7687 15.9661 11.9712 15.746 12.1038 15.4842C12.2364 15.2223 12.294 14.9289 12.27 14.6363C12.2461 14.3437 12.1417 14.0635 11.9683 13.8267C11.3609 13.0204 10.579 12.362 9.68106 11.9008C8.78313 11.4395 7.79249 11.1874 6.78332 11.1633C5.77409 11.1875 4.7834 11.4398 3.88547 11.9011C2.98754 12.3625 2.20564 13.0211 1.59832 13.8275C1.42554 14.0644 1.32157 14.3444 1.29791 14.6366C1.27425 14.9289 1.33182 15.222 1.46425 15.4836C1.59668 15.7451 1.79882 15.965 2.04836 16.119C2.2979 16.2729 2.58513 16.3549 2.87832 16.3558H10.6875Z" stroke="#555555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 								</svg>
 								
                                 
                                 
                             <span
-								class="align-middle">Reports</span>
+								class="align-middle">Manage Admin</span>
 						</a>
 						 
 					</li>
-					<li class="sidebar-item  mb-3">
+                    <li class="sidebar-item  mb-3">
+						<a      class="sidebar-link" href="./subscription.html">
+							<!-- <i class="align-middle me-2 fas fa-fw fa-home"></i>  -->
+                            
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_169_7912)">
+                                <path d="M11.9297 7.58131C11.8143 7.25667 11.6013 6.97565 11.32 6.77669C11.0387 6.57774 10.7028 6.47058 10.3583 6.46988H9.06829C8.70026 6.46795 8.34459 6.60256 8.07006 6.84767C7.79553 7.09278 7.62163 7.43098 7.58201 7.79687C7.54238 8.16276 7.63983 8.53035 7.85552 8.82856C8.07121 9.12676 8.38981 9.33439 8.74972 9.41131L10.714 9.83988C11.1157 9.92781 11.4706 10.1611 11.7108 10.4948C11.9509 10.8286 12.0592 11.2393 12.0149 11.6481C11.9706 12.0568 11.7768 12.4348 11.4708 12.7094C11.1647 12.9839 10.768 13.1357 10.3569 13.1356H9.24686C8.52115 13.1356 7.904 12.6727 7.67543 12.0256M9.80258 6.46988V4.80273M9.80258 14.8027V13.137M2.854 19.2827V15.7113H6.42543" stroke="#555555" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M19.1255 8.29153C19.5047 10.3133 19.2019 12.4037 18.2646 14.2347C17.3273 16.0658 15.8086 17.5338 13.9467 18.4083C12.0849 19.2828 9.98538 19.5144 7.9777 19.0666C5.97003 18.6189 4.16786 17.5171 2.85404 15.9344M0.874043 11.7087C0.494793 9.68695 0.797581 7.59651 1.73488 5.76547C2.67219 3.93444 4.19094 2.46646 6.05278 1.59193C7.91462 0.717407 10.0141 0.485848 12.0218 0.933599C14.0295 1.38135 15.8317 2.48306 17.1455 4.06582" stroke="#555555" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M17.1454 0.717285V4.28871H13.574" stroke="#555555" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_169_7912">
+                                <rect width="20" height="20" fill="white"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                                
+                                
+                                
+                            <span
+								class="align-middle">Subscriptions</span>
+						</a>
+						 
+					</li>
+                    <li class="sidebar-item  mb-3">
 
 
 						<a href="./setting.html" class="sidebar-link">
@@ -118,6 +144,62 @@
 						</a>
 						 
 					</li>
+					<li class="sidebar-item active  mb-3">
+
+
+						<a href="./supper-reports.html" class="sidebar-link">
+
+
+				 
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2.5 6.16667V3C2.5 2.86739 2.55268 2.74021 2.64645 2.64645C2.74021 2.55268 2.86739 2.5 3 2.5H7.83333C7.96594 2.5 8.09312 2.55268 8.18689 2.64645C8.28066 2.74021 8.33333 2.86739 8.33333 3V6.16667C8.33333 6.29927 8.28066 6.42645 8.18689 6.52022C8.09312 6.61399 7.96594 6.66667 7.83333 6.66667H3C2.86739 6.66667 2.74021 6.61399 2.64645 6.52022C2.55268 6.42645 2.5 6.29927 2.5 6.16667ZM11.6667 17V13.8333C11.6667 13.7007 11.7193 13.5735 11.8131 13.4798C11.9069 13.386 12.0341 13.3333 12.1667 13.3333H17C17.1326 13.3333 17.2598 13.386 17.3536 13.4798C17.4473 13.5735 17.5 13.7007 17.5 13.8333V17C17.5 17.1326 17.4473 17.2598 17.3536 17.3536C17.2598 17.4473 17.1326 17.5 17 17.5H12.1667C12.0341 17.5 11.9069 17.4473 11.8131 17.3536C11.7193 17.2598 11.6667 17.1326 11.6667 17ZM11.6667 10.3333V3C11.6667 2.86739 11.7193 2.74021 11.8131 2.64645C11.9069 2.55268 12.0341 2.5 12.1667 2.5H17C17.1326 2.5 17.2598 2.55268 17.3536 2.64645C17.4473 2.74021 17.5 2.86739 17.5 3V10.3333C17.5 10.4659 17.4473 10.5931 17.3536 10.6869C17.2598 10.7807 17.1326 10.8333 17 10.8333H12.1667C12.0341 10.8333 11.9069 10.7807 11.8131 10.6869C11.7193 10.5931 11.6667 10.4659 11.6667 10.3333ZM2.5 17V9.66667C2.5 9.53406 2.55268 9.40688 2.64645 9.31311C2.74021 9.21934 2.86739 9.16667 3 9.16667H7.83333C7.96594 9.16667 8.09312 9.21934 8.18689 9.31311C8.28066 9.40688 8.33333 9.53406 8.33333 9.66667V17C8.33333 17.1326 8.28066 17.2598 8.18689 17.3536C8.09312 17.4473 7.96594 17.5 7.83333 17.5H3C2.86739 17.5 2.74021 17.4473 2.64645 17.3536C2.55268 17.2598 2.5 17.1326 2.5 17Z" stroke="#101010" stroke-width="1.5"/>
+								</svg>
+								
+                                
+                                
+                            <span
+								class="align-middle">Reports</span>
+						</a>
+						 
+					</li>
+                    <li class="sidebar-item  mb-3">
+
+
+						<a href="./User-request.html" class="sidebar-link">
+
+
+				 
+							<svg width="20" height="20" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M13.94 15.3617H15.7217C15.8784 15.3641 16.0334 15.3286 16.1734 15.2581C16.3134 15.1877 16.4342 15.0843 16.5256 14.957C16.617 14.8297 16.6762 14.6821 16.6981 14.5269C16.7201 14.3717 16.7041 14.2135 16.6517 14.0658C16.1974 13.0934 15.4781 12.2688 14.5765 11.6866C13.6749 11.1044 12.6273 10.7881 11.5542 10.7742M11.5542 8.475C11.9552 8.47511 12.3523 8.39621 12.7229 8.24282C13.0934 8.08942 13.4301 7.86453 13.7137 7.58099C13.9973 7.29745 14.2223 6.96082 14.3758 6.59032C14.5293 6.21982 14.6083 5.8227 14.6083 5.42166C14.6094 5.01992 14.5312 4.62192 14.3782 4.25045C14.2252 3.87899 14.0004 3.54137 13.7167 3.25695C13.433 2.97253 13.0959 2.74689 12.7248 2.59297C12.3537 2.43906 11.9559 2.35989 11.5542 2.36M6.78332 8.57083C7.70144 8.56862 8.58119 8.2023 9.22954 7.55223C9.87789 6.90216 10.2419 6.02145 10.2417 5.10333C10.2417 4.1859 9.87721 3.30605 9.22849 2.65733C8.57977 2.00861 7.69992 1.64417 6.78249 1.64417C5.86506 1.64417 4.98521 2.00861 4.33649 2.65733C3.68777 3.30605 3.32332 4.1859 3.32332 5.10333C3.32332 6.02145 3.68753 6.90208 4.33603 7.55199C4.98454 8.2019 5.86437 8.56801 6.78249 8.57M10.6875 16.3558C10.981 16.3554 11.2687 16.2738 11.5187 16.1199C11.7687 15.9661 11.9712 15.746 12.1038 15.4842C12.2364 15.2223 12.294 14.9289 12.27 14.6363C12.2461 14.3437 12.1417 14.0635 11.9683 13.8267C11.3609 13.0204 10.579 12.362 9.68106 11.9008C8.78313 11.4395 7.79249 11.1874 6.78332 11.1633C5.77409 11.1875 4.7834 11.4398 3.88547 11.9011C2.98754 12.3625 2.20564 13.0211 1.59832 13.8275C1.42554 14.0644 1.32157 14.3444 1.29791 14.6366C1.27425 14.9289 1.33182 15.222 1.46425 15.4836C1.59668 15.7451 1.79882 15.965 2.04836 16.119C2.2979 16.2729 2.58513 16.3549 2.87832 16.3558H10.6875Z" stroke="#555555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+								
+                                
+                                
+                            <span
+								class="align-middle">User Requests</span>
+						</a>
+						 
+					</li>
+                   
+                    <li class="sidebar-item  mb-3">
+						<a      class="sidebar-link" href="./Dacoments.html">
+							<!-- <i class="align-middle me-2 fas fa-fw fa-home"></i>  -->
+                            
+                            <svg width="20" height="20" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M13.94 15.3617H15.7217C15.8784 15.3641 16.0334 15.3286 16.1734 15.2581C16.3134 15.1877 16.4342 15.0843 16.5256 14.957C16.617 14.8297 16.6762 14.6821 16.6981 14.5269C16.7201 14.3717 16.7041 14.2135 16.6517 14.0658C16.1974 13.0934 15.4781 12.2688 14.5765 11.6866C13.6749 11.1044 12.6273 10.7881 11.5542 10.7742M11.5542 8.475C11.9552 8.47511 12.3523 8.39621 12.7229 8.24282C13.0934 8.08942 13.4301 7.86453 13.7137 7.58099C13.9973 7.29745 14.2223 6.96082 14.3758 6.59032C14.5293 6.21982 14.6083 5.8227 14.6083 5.42166C14.6094 5.01992 14.5312 4.62192 14.3782 4.25045C14.2252 3.87899 14.0004 3.54137 13.7167 3.25695C13.433 2.97253 13.0959 2.74689 12.7248 2.59297C12.3537 2.43906 11.9559 2.35989 11.5542 2.36M6.78332 8.57083C7.70144 8.56862 8.58119 8.2023 9.22954 7.55223C9.87789 6.90216 10.2419 6.02145 10.2417 5.10333C10.2417 4.1859 9.87721 3.30605 9.22849 2.65733C8.57977 2.00861 7.69992 1.64417 6.78249 1.64417C5.86506 1.64417 4.98521 2.00861 4.33649 2.65733C3.68777 3.30605 3.32332 4.1859 3.32332 5.10333C3.32332 6.02145 3.68753 6.90208 4.33603 7.55199C4.98454 8.2019 5.86437 8.56801 6.78249 8.57M10.6875 16.3558C10.981 16.3554 11.2687 16.2738 11.5187 16.1199C11.7687 15.9661 11.9712 15.746 12.1038 15.4842C12.2364 15.2223 12.294 14.9289 12.27 14.6363C12.2461 14.3437 12.1417 14.0635 11.9683 13.8267C11.3609 13.0204 10.579 12.362 9.68106 11.9008C8.78313 11.4395 7.79249 11.1874 6.78332 11.1633C5.77409 11.1875 4.7834 11.4398 3.88547 11.9011C2.98754 12.3625 2.20564 13.0211 1.59832 13.8275C1.42554 14.0644 1.32157 14.3444 1.29791 14.6366C1.27425 14.9289 1.33182 15.222 1.46425 15.4836C1.59668 15.7451 1.79882 15.965 2.04836 16.119C2.2979 16.2729 2.58513 16.3549 2.87832 16.3558H10.6875Z" stroke="#555555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+                                
+                                
+                                
+                                
+                                
+                            <span
+								class="align-middle">Documents</span>
+						</a>
+						 
+					</li>
+				 
+					
 				 
 				 
 				 
@@ -267,453 +349,67 @@
 					</ul>
 				</div>
 			</nav>
-			<main class="content quicksand-font">
-				<div class="container-fluid p-sm-2">
-					<h1 class="dashboard-heading fw-bolder">Dashboard</h1>
-					<p class="fw-bolder mb-3 dashboard-para">Hi, Samantha. Welcome back to Sedap Admin!</p>
-					 
-					<div class="row main-card-content">
-
-
-
-
-
-
-						<div class="col-12 col-sm-6 col-md-3 mb-3 mb-md-0 ">
-
-							<a href="./manage-user.html" class="text-decoration-none">
-								<div class="dashboard-card">
-									<div class="card-body px-3 py-2">
-										<div class="d-flex  justify-content-between mb-3">
-											<div class="col mt-0">
-												<h5 class="card-title">Total Users</h5>
-											</div>
-	
-											<div>
-	
-												<img src="../img/avatars/plan-icon.svg" alt="">
-	
-											</div>
-										</div>
-										<div class="d-flex  justify-content-between">
-											<h1 class="m-0 ">75</h1>
-											<button class="btn adminbtn  px-3  py-0">
-												+2,5%
-											</button>
-										</div>
-	
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="col-12 col-sm-6 col-md-3 mb-3 mb-md-0 ">
-
-							<a href="./repots.html" class="text-decoration-none">
-								<div class="dashboard-card">
-									<div class="card-body px-3 py-2">
-										<div class="d-flex  justify-content-between mb-3">
-											<div class="col mt-0">
-												<h5 class="card-title">Report </h5>
-											</div>
-	
-											<div>
-	
-												<img src="../img/avatars/plan-icon.svg" alt="">
-	
-											</div>
-										</div>
-										<div class="d-flex  justify-content-between">
-											<h1 class="m-0 ">75</h1>
-											<button class="btn adminbtn  px-3  py-0">
-												View
-											</button>
-										</div>
-	
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="col-12 col-sm-6 col-md-3 mb-3 mb-md-0 ">
-
-							<div class="dashboard-card">
-								<div class="card-body px-3 py-2">
-									<div class="d-flex  justify-content-between mb-3">
-										<div class="col mt-0">
-											<h5 class="card-title">Subscribed Users </h5>
-										</div>
-
-										<div>
-
-											<img src="../img/avatars/plan-icon.svg" alt="">
-
-										</div>
-									</div>
-									<div class="d-flex  justify-content-between">
-										<h1 class="m-0 ">75</h1>
-										<button class="btn adminbtn  px-3  py-0">
-											View
-										</button>
-									</div>
-
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-sm-6 col-md-3 mb-3 mb-md-0 ">
-
-							<a href="./pending-task.html" class="text-decoration-none">
-								<div class="dashboard-card">
-									<div class="card-body px-3 py-2">
-										<div class="d-flex  justify-content-between mb-3">
-											<div class="col mt-0">
-												<h5 class="card-title">Pending Licenses</h5>
-											</div>
-	
-											<div>
-	
-												<img src="../img/avatars/plan-icon.svg" alt="">
-	
-											</div>
-										</div>
-										<div class="d-flex  justify-content-between">
-											<h1 class="m-0 ">75</h1>
-											<button class="btn adminbtn  px-3  py-0">
-												View
-											</button>
-										</div>
-	
-									</div>
-								</div>
-							</a>
-						</div>
-					 
-					</div>
-
-
-					<div class="row my-3">
-						<div class="col-12 ">
-							<div class="card  linchartgrapgh w-100">
-								<div class="card-header pb-0">
-									<div class="row px-3">
-										<div class="col-md-9">
-											<p class="fw-bolder mb-0 dashboard-para">Services Progress</p>
-
-									
-										</div>
-
-										<div class="col-md-3 ">
-											<div class="input-group askjsdsaj">
-										 
-												<select class="form-select">
-													<option>Select Service</option>
-													<option>One</option>
-													<option>Two</option>
-													<option>Three</option>
-												</select>
-											</div>
-										</div>
-									</div>
-									 
-								</div>
-								<div class="card-body py-0">
-									<div class="chart">
-										<canvas id="chartjs-line"></canvas>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
- 
-					<div class="row my-3">
-						<div class="col-12 ">
-							<div class="card  linchartgrapgh w-100">
-								<div class="card-header pb-0">
-									<div class="row px-3">
-										<div class="col-md-9">
-											<p class="fw-bolder mb-0 dashboard-para">Reports Progress</p>
-
-									
-										</div>
-
-										<div class="col-md-3 ">
-											<div class="input-group askjsdsaj">
-										 
-												<select class="form-select">
-													<option>Select Service</option>
-													<option>One</option>
-													<option>Two</option>
-													<option>Three</option>
-												</select>
-											</div>
-										</div>
-									</div>
-									 
-								</div>
-								<div class="card-body py-0">
-									<div class="chart">
-										<canvas id="chartjs-line1"></canvas>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
- 
-					<div>
-						<h2 class="m-0 fw-bolder my-3">User List</h2>
-					</div>
-
-					<div class="table-responsive tablereports">
-						<table class="table mb-0">
-						  <thead>
-							<tr class="tablaeheading">
-							  <th scope="col">ID</th>
-							  <th scope="col">Name</th>
-							  <th scope="col">Subscription Plan</th>
-							  <th scope="col">Start Date</th>
-							  <th scope="col">End Date</th>
-							  <th scope="col">Status</th>
-							  <th scope="col">Action</th>
-			  
-							</tr>
-						  </thead>
-						  <tbody>
-							<tr class="table-contentse">
-								<td><strong>01</strong></td>
-								<td >
-									<p><img src="../img/dashboard/user-list-img.png" alt="" class="img-fluid list-img">
-									 Jane Doe</p>
-								</td>
-								<td>Starter</td>
-								<td>
-									09/01/25
-								</td>
-								<td>
-									09/03/25
-								</td>
-								<td>
-									<p class="user-list-active-status">Active</p>
-								</td>
-								<td>
-			  
-								  <a href="">
-									<button class="admin-table-button">Manage</button>
-								  </a>
-								</td>
-			  
-							  </tr>
-							<tr class="table-contentse">
-								<td><strong>01</strong></td>
-								<td >
-									<p><img src="../img/dashboard/user-list-img.png" alt="" class="img-fluid list-img">
-									 Jane Doe</p>
-								</td>
-								<td>Premium</td>
-								<td>
-									09/01/25
-								</td>
-								<td>
-									09/03/25
-								</td>
-								<td>
-									<p class="user-list-inactive-status">In-Active</p>
-								</td>
-								<td>
-			  
-								  <a href="">
-									<button class="admin-table-button">Manage</button>
-								  </a>
-								</td>
-			  
-							  </tr>
-							  <tr class="table-contentse">
-								<td><strong>01</strong></td>
-								<td >
-									<p><img src="../img/dashboard/user-list-img.png" alt="" class="img-fluid list-img">
-									 Jane Doe</p>
-								</td>
-								<td>Starter</td>
-								<td>
-									09/01/25
-								</td>
-								<td>
-									09/03/25
-								</td>
-								<td>
-									<p class="user-list-active-status">Active</p>
-								</td>
-								<td>
-			  
-								  <a href="">
-									<button class="admin-table-button">Manage</button>
-								  </a>
-								</td>
-			  
-							  </tr>
-							<tr class="table-contentse">
-								<td><strong>01</strong></td>
-								<td >
-									<p><img src="../img/dashboard/user-list-img.png" alt="" class="img-fluid list-img">
-									 Jane Doe</p>
-								</td>
-								<td>Premium</td>
-								<td>
-									09/01/25
-								</td>
-								<td>
-									09/03/25
-								</td>
-								<td>
-									<p class="user-list-inactive-status">In-Active</p>
-								</td>
-								<td>
-			  
-								  <a href="">
-									<button class="admin-table-button">Manage</button>
-								  </a>
-								</td>
-			  
-							  </tr>
-							  <tr class="table-contentse">
-								<td><strong>01</strong></td>
-								<td >
-									<p><img src="../img/dashboard/user-list-img.png" alt="" class="img-fluid list-img">
-									 Jane Doe</p>
-								</td>
-								<td>Starter</td>
-								<td>
-									09/01/25
-								</td>
-								<td>
-									09/03/25
-								</td>
-								<td>
-									<p class="user-list-active-status">Active</p>
-								</td>
-								<td>
-			  
-								  <a href="">
-									<button class="admin-table-button">Manage</button>
-								  </a>
-								</td>
-			  
-							  </tr>
-							<tr class="table-contentse">
-								<td><strong>01</strong></td>
-								<td >
-									<p><img src="../img/dashboard/user-list-img.png" alt="" class="img-fluid list-img">
-									 Jane Doe</p>
-								</td>
-								<td>Premium</td>
-								<td>
-									09/01/25
-								</td>
-								<td>
-									09/03/25
-								</td>
-								<td>
-									<p class="user-list-inactive-status">In-Active</p>
-								</td>
-								<td>
-			  
-								  <a href="">
-									<button class="admin-table-button">Manage</button>
-								  </a>
-								</td>
-			  
-							  </tr>
-							  <tr class="table-contentse">
-								<td><strong>01</strong></td>
-								<td >
-									<p><img src="../img/dashboard/user-list-img.png" alt="" class="img-fluid list-img">
-									 Jane Doe</p>
-								</td>
-								<td>Starter</td>
-								<td>
-									09/01/25
-								</td>
-								<td>
-									09/03/25
-								</td>
-								<td>
-									<p class="user-list-active-status">Active</p>
-								</td>
-								<td>
-			  
-								  <a href="">
-									<button class="admin-table-button">Manage</button>
-								  </a>
-								</td>
-			  
-							  </tr>
-							<tr class="table-contentse">
-								<td><strong>01</strong></td>
-								<td >
-									<p><img src="../img/dashboard/user-list-img.png" alt="" class="img-fluid list-img">
-									 Jane Doe</p>
-								</td>
-								<td>Premium</td>
-								<td>
-									09/01/25
-								</td>
-								<td>
-									09/03/25
-								</td>
-								<td>
-									<p class="user-list-inactive-status">In-Active</p>
-								</td>
-								<td>
-			  
-								  <a href="">
-									<button class="admin-table-button">Manage</button>
-								  </a>
-								</td>
-			  
-							  </tr>
-							
-							
-			  
-						  </tbody>
-						</table>
-			  
-						<div class="pagination-container">
-                            <nav>
-                              <ul class="pagination">
-                                <li class="page-item" id="prev-btn">
-                                  <button class="page-link py-2">Previous</button>
-                                </li>
-                                <li class="page-item active pt-1" data-page="1">
-                                  <button class="page-link">1</button>
-                                </li>
-                                <li class="page-item pt-1" data-page="2">
-                                  <button class="page-link">2</button>
-                                </li>
-                                <li class="page-item pt-1" data-page="3">
-                                  <button class="page-link">3</button>
-                                </li>
-                                <li class="page-item pt-1" data-page="4">
-                                  <button class="page-link">4</button>
-                                </li>
-                                <li class="page-item" id="next-btn">
-                                  <button class="page-link py-2">Next</button>
-                                </li>
-                              </ul>
-                            </nav>
+            <main class="content m-0">
+                <div class="container-fluid py-2 py-sm-4">
+        
+                  <h2 class="verification-heading"> Upload report</h2>
+                  <div class="form p-2 p-sm-4">
+        
+                    <form action="">
+                      <h3 class="verification-heading">Fill detail</h3>
+                      <div class="row mb-3">
+                        <div class="col">
+                          <label for="firstName" class="form-label lable-text">Title</label>
+                          <input type="text" class="form-input" id="firstName" placeholder="FSSAI License Application ">
+                        </div>
+                      
+                      </div>
+                      <div class="mb-3">
+                        <label for="message" class="form-label lable-text">Price</label>
+                        <input type="email" class="form-input" id="send-messege" placeholder="FSSAI License Application ">
+                      </div>
+                    
+                      <div class="mb-3">
+                        <label for="message" class="form-label lable-text">Descriptions </label>
+                        <input type="email" class="form-input" id="send-messege" placeholder="" style="height: 115px;">
+                      </div>
+                    
+        
+                      <div class="">
+                        <label for="message" class="form-label lable-text">Upload Image/ Video</label>
+                        <div class="upload__box  position-relative idCard-uploard form-input">
+                          <div class="upload__btn-box">
+                            <label class="upload__btn">
+                              <p><img src="./img/avatars/upload-img-svg.svg" alt="">Upload images</p>
+                              <input type="file" multiple="" data-max_length="20" class="upload__inputfile">
+                            </label>
                           </div>
-
-					  </div>
-				
-					
-
-					
-
-
-				</div>
-		</div>
-	
-
-		
-
-	</div>
-	</main>
+                          <div class="upload__img-wrap"></div>
+                        </div>
+                      </div>
+                      <div class="mt-3">
+                        <label for="message" class="form-label lable-text">Upload PDF</label>
+                        <div class="upload__box  position-relative  form-input ">
+                          <div class="upload__btn-box">
+                            <label class="upload__btn">
+                              <p><img src="./img/avatars/upload-img-svg.svg" alt="">Upload images</p>
+                              <input type="file" multiple="" data-max_length="20" class="upload__inputfile">
+                            </label>
+                          </div>
+                          <div class="upload__img-wrap"></div>
+                        </div>
+                      </div>
+        
+                      <div class="mt-5 d-flex justify-content-end">
+                        <button class="btn py-2" type="button" data-bs-toggle="modal" data-bs-target="#successModal">Update Report <img
+                            src="./img/avatars/go-forward-icon.svg" alt="" class="ms-3"></button>
+                      </div>
+                    </form>
+        
+                  </div>
+        
+                </div>
+              </main>
 	<!-- <footer class="footer">
 				<div class="container-fluid">
 					<div class="row text-muted">

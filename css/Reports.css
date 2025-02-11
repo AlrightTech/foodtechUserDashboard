@@ -124,3 +124,7 @@
     border: 1px solid #FFD21B33;
     border-radius: 10px;
 }
+.View-butn:hover{
+ background-color: #ffcc00;
+ text-decoration: none !important;
+}
