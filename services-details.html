@@ -489,8 +489,11 @@
             <div class="modal-content p-sm-3 p-1">
                 <h2 class="verification-heading">Upload Documents</h2>
                 <div class="mb-3">
-                    <label for="message" class="form-label lable-text">Document</label>
-                    <input type="email" class="form-input" id="send-messege" placeholder="Select Document">
+                    <label class="form-label lable-text">Document</label>
+                    <div class="document-custom-file-input">
+                        <span class="file-label">Select Document</span>
+                        <input type="file" class="file-input form-input">
+                    </div>
                 </div>
                 <div class="mb-3">
                     <label for="message" class="form-label lable-text">Description</label>
@@ -851,5 +854,16 @@
         });
     }
 </script>
+<script>
+    document.querySelectorAll('.document-custom-file-input').forEach(customFileInput => {
+        const fileInput = customFileInput.querySelector('.file-input');
+        const fileLabel = customFileInput.querySelector('.file-label');
 
+        customFileInput.addEventListener('click', () => fileInput.click());
+
+        fileInput.addEventListener('change', () => {
+            fileLabel.textContent = fileInput.files.length > 0 ? fileInput.files[0].name : 'Select Document';
+        });
+    });
+</script>
 </html>

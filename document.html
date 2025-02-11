@@ -311,7 +311,12 @@
 			</nav>
 			<main class=" quicksand-font pt-2 ps-2">
 				<div class="container-fluid p-sm-2 ">
+					<div class="header-doc d-flex justify-content-between align-items-center mb-3">
 					<h1 class="dashboard-headingdoc fw-bolder">Uploaded Documents</h1>
+					<form class="d-flex pt-2 fill-button " >
+						<button type="button" data-bs-toggle="modal" data-bs-target="#successModal" class="btn btn-lg py-1 px-2" style="color: rgba(0, 0, 0, 0.8); font-weight: 600;">+ Add New Doc</button>
+					  </form>
+				</div>
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-lg-4 col-sm-6">
@@ -445,6 +450,44 @@
 		</div>
 	</div>
 
+
+
+<!-- Modal -->
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content p-sm-3 p-1">
+			<h2 class="verification-heading">Upload Documents</h2>
+			
+			<div class="mb-3">
+				<label class="form-label lable-text">Document</label>
+				<div class="document-custom-file-input">
+					<span class="file-label">Select Document</span>
+					<input type="file" class="file-input form-input">
+				</div>
+			</div>
+			<div class="mb-3">
+				<label for="message" class="form-label lable-text">Description</label>
+				<input type="email" class="form-input" id="send-messege" placeholder="Enter Description">
+			</div>
+			<div class="">
+				<label for="message" class="form-label lable-text">Upload images</label>
+				<div class="upload__box  position-relative idCard-uploard form-input">
+					<div class="upload__btn-box">
+						<label class="upload__btn">
+							<p><img src="./img/avatars/upload-img-svg.svg" alt="">Upload file</p>
+							<input type="file" multiple="" data-max_length="20" class="upload__inputfile">
+						</label>
+					</div>
+					<div class="upload__img-wrap"></div>
+				</div>
+			</div>
+			<div class="mt-5 d-flex justify-content-end">
+				<button class="btn py-2" type="button" data-bs-toggle="modal"
+					data-bs-target="#successModal">Save</button>
+			</div>
+		</div>
+	</div>
+</div>
 	<svg width="0" height="0" style="position:absolute">
 		<defs>
 			<symbol viewBox="0 0 512 512" id="ion-ios-pulse-strong">
@@ -722,6 +765,18 @@
             }
         });
     }
+</script>
+<script>
+    document.querySelectorAll('.document-custom-file-input').forEach(customFileInput => {
+        const fileInput = customFileInput.querySelector('.file-input');
+        const fileLabel = customFileInput.querySelector('.file-label');
+
+        customFileInput.addEventListener('click', () => fileInput.click());
+
+        fileInput.addEventListener('change', () => {
+            fileLabel.textContent = fileInput.files.length > 0 ? fileInput.files[0].name : 'Select Document';
+        });
+    });
 </script>
 </body>
 
