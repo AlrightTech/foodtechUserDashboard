@@ -628,3 +628,25 @@ border: 2px solid transparent;
         }
    
 }
+
+
+.document-custom-file-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid var(--primary-color) !important;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.document-custom-file-input span {
+  flex-grow: 1;
+color: #495057;
+}
+
+.document-custom-file-input input {
+  display: none;
+}
