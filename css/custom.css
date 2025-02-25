@@ -650,3 +650,15 @@ color: #495057;
 .document-custom-file-input input {
   display: none;
 }
+
+@media(max-width:600px){
+  .table{
+    width: 600px;
+  }
+  .fill-button2 button{
+    font-size: 14px !important;
+  }
+  .dashboard-headingdoc{
+    font-size: 14px !important;
+  }
+}
