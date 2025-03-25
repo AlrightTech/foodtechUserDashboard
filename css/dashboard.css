@@ -438,3 +438,8 @@ p {
     width: 600px;
   } 
 }
+
+.document_select{
+  outline: none;
+  
+}

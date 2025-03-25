@@ -230,3 +230,23 @@
     font-size: 14px;
     font-weight: 600;
 }
+
+.Back_btn{
+    background-color: #ffe600;
+    width: 2rem ;
+    height: 2rem;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.Back_btn:hover{
+    background-color: rgba(255, 210, 27, 0.7);
+}
+.Back_btn:active{
+    background-color: white;
+    border: 2px solid #ffe600;
+        
+}

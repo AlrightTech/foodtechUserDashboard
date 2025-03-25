@@ -460,9 +460,14 @@
 			
 			<div class="mb-3">
 				<label class="form-label lable-text">Document</label>
-				<div class="document-custom-file-input">
-					<span class="file-label">Select Document</span>
-					<input type="file" class="file-input form-input">
+				<div class="document-custom-file-input w-100 outline-0">
+					<!-- <span class="file-label">Select Document</span>
+					<input type="file" class="file-input form-input"> -->
+					<select class="w-100 border-0 p-1 document_select" id="file_type">
+						<option value="pdf">PDF</option>
+						<option value="word">Word</option>
+						<option value="excel">Excel</option>
+					</select>
 				</div>
 			</div>
 			<div class="mb-3">
