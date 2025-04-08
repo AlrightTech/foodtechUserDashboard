@@ -35,8 +35,6 @@
     <link rel="stylesheet" href="css/setting.css">
 </head>
 
-
-
 <body>
 
 
@@ -353,7 +351,7 @@
                         <div class="col-md-3">
                             <nav class=" px-3 py-2 setting-nav">
 
-                                <ul class="nav flex-column" id="myTab" role="tablist">
+                                <ul class="nav flex-column" id="myTabs" role="tablist">
                                     <li class="nav-item mb-2 ">
                                         <a class="nav-link active setting-navtab" id="profile-tab" data-bs-toggle="tab"
                                             href="#profile" role="tab" aria-controls="profile" aria-selected="true">
@@ -391,8 +389,12 @@
                         </div>
                         <div class="col-md-9 mt-sm-0 mt-3">
                             <!-- Content -->
+                            
                             <div class="tab-content  w-100">
-                                <div class="tab-pane fade show active" id="profile" role="tabpanel"
+                                <div class="back_button_div mb-3 w-100
+                                " > <div class="Back_btn" id="prevTab"><i class="fas fa-arrow-left"></i>
+                                </div></div>
+                                <div class="tab-pane fade show active " id="profile" role="tabpanel"
                                     aria-labelledby="profile-tab">
                                     <!-- <h3>Profile Content</h3>
                                     <p>This is the profile section.</p> -->
@@ -443,9 +445,9 @@
                                                     <select class="form-select form-input" id="selectbussines"
                                                         aria-label="Default select example">
                                                         <option selected>Select Business Type</option>
-                                                        <option value="1">Option 1</option>
-                                                        <option value="2">Option 2</option>
-                                                        <option value="3">Option 3</option>
+                                                        <option value="1">Restaurant/Food Service</option>
+                                                        <option value="2">Food Production/Manufacturing</option>
+                                                        <option value="3">Technology Provider</option>
                                                     </select>
                                                 </div>
                                                 <div class="mb-3">
@@ -455,9 +457,9 @@
                                                     <select class="form-select form-input" id="selectcategory"
                                                         aria-label="Default select example">
                                                         <option selected>Select Business Category</option>
-                                                        <option value="1">Option 1</option>
-                                                        <option value="2">Option 2</option>
-                                                        <option value="3">Option 3</option>
+                                                        <option value="1">General Food & Beverage</option>
+                                                        <option value="2">Software Solutions</option>
+                                                        <option value="3">Sustainable/Innovative Food</option>
                                                     </select>
                                                 </div>
 
@@ -1858,7 +1860,51 @@
                     : '<i class="bi bi-eye"></i>';
         });
     </script>
-
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const tabLinks = document.querySelectorAll('#myTabs .nav-link');
+          const backButton = document.getElementById('prevTab');
+          
+          if (document.querySelector('.nav-link.active').id === 'profile-tab') {
+            document.querySelector('.back_button_div').style.display = 'none';
+          }
+          
+          function goToPreviousTab() {
+            const activeTab = document.querySelector('.nav-link.active');
+            let previousTab = null;
+            
+            for (let i = 0; i < tabLinks.length; i++) {
+              if (tabLinks[i] === activeTab && i > 0) {
+                previousTab = tabLinks[i-1];
+                break;
+              }
+            }
+            
+            if (previousTab) {
+              const bsTab = new bootstrap.Tab(previousTab);
+              bsTab.show();
+              
+              if (previousTab.id === 'profile-tab') {
+                document.querySelector('.back_button_div').style.display = 'none';
+              }
+            }
+          }
+          
+          if (backButton) {
+            backButton.addEventListener('click', goToPreviousTab);
+          }
+          
+          tabLinks.forEach((tabLink, index) => {
+            tabLink.addEventListener('shown.bs.tab', function() {
+              if (index === 0) {
+                document.querySelector('.back_button_div').style.display = 'none';
+              } else {
+                document.querySelector('.back_button_div').style.display = 'block';
+              }
+            });
+          });
+        });
+        </script>
 
 </body>
 
